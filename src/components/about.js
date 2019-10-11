@@ -1,13 +1,16 @@
 import React from "react"
+import NavBar from "../components/navbar"
 
-const Header = () => {
+const About = () => {
   return (
-    <div>
+    <>
       <h1>Hi,</h1>
       <p>I'm Michl,</p>
       <p>Front-End Web Developer.</p>
-    </div>
+
+      <NavBar />
+    </>
   )
 }
 
-export default Header
+export default About
