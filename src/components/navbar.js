@@ -1,10 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-import { graphql } from "gatsby"
-
 import navbarStyles from "./navbar.module.scss"
-import headerStyles from "./header.module.scss"
 
 const NavBar = () => {
   return (
