@@ -1,5 +1,33 @@
 .container {
   display: flex;
+  flex-direction: column;
+  width: 100%;
+  // height: 100vh;
+  // position: relative;
+  z-index: 2;
+  overflow-x: none;
+  background: #303030;
+  flex: 0 1 40px;
+  min-height: 100vh;
+
+  // @media screen and (min-width: 1200px) {
+  //   flex-direction: row;
+  // }
+}
+
+.vertically {
+  display: flex;
   flex-direction: row;
   width: 100%;
+}
+
+.horizontally {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.layoutPage {
+  display: flex;
+  flex-direction: column;
 }

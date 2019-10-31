@@ -13,7 +13,7 @@ const NavBar = () => {
           to="/home"
           data-nav-text="home"
         >
-          <i className={`${navbarStyles.icon} ${navbarStyles.homeIcon}`}></i>
+          <i className={navbarStyles.michlIcon}></i>
         </Link>
       </li>
       <li>

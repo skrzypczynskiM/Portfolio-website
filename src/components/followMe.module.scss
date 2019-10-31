@@ -1,0 +1,25 @@
+.logos {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0;
+  justify-content: space-between;
+}
+
+.icon {
+  display: inline-block;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}
+//   &.githubLogo {
+//     background-image: url("../images/github.svg");
+//   }
+//   &.linkedinLogo {
+//     background-image: url("../images/linkedin.svg");
+//   }
+// }
+
+img {
+  width: 90px;
+  height: 90px;
+}

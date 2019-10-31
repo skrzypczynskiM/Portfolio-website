@@ -17,6 +17,10 @@ const Footer = () => {
   return (
     <footer className={footerStyles.footer}>
       <p>Handcrafted by Michl, © 2019</p>
+      <hr className={footerStyles.spaceBar}></hr>
+      <p>
+        Powered by <i></i> Gatsby
+      </p>
     </footer>
   )
 }
