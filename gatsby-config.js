@@ -5,15 +5,15 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
-    {
-      resolve: "gatsby-plugin-react-svg",
-      options: {
-        rule: {
-          include: /assets/, // See below to configure properly
-        },
-      },
-    },
-    "gatsby-transformer-inline-svg",
+    // {
+    //   resolve: "gatsby-plugin-react-svg",
+    //   options: {
+    //     rule: {
+    //       include: /assets/, // See below to configure properly
+    //     },
+    //   },
+    // },
+    // "gatsby-transformer-inline-svg",
     "gatsby-plugin-sass",
     `gatsby-plugin-react-helmet`,
     {
