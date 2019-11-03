@@ -17,8 +17,8 @@ const Layout = props => {
     <div className={layoutStyles.container}>
       <NavBar />
       {props.children}
-      {/* <div className={layoutStyles.layoutPage}> */}
       <Footer />
+      {/* <div className={layoutStyles.layoutPage}> */}
       {/* </div> */}
     </div>
   )
