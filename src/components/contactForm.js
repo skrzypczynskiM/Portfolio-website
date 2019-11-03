@@ -1,10 +1,9 @@
 import React, { useRef, useState, useEffect } from "react"
 import contactStyles from "./contactForm.module.scss"
-import { CSSTransition } from "react-transition-group"
-import "./transitionStyles.css"
+// import "./transitionStyles.css"
 
 //import useForm from "./useForm"
-import FollowMe from "./followMe"
+// import FollowMe from "./followMe"
 //import Particles from "react-particles-js"
 
 // const particleOpt = {
