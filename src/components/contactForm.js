@@ -299,7 +299,7 @@ const ContactForm = () => {
             <div>Follow me</div>
             <div className={contactStyles.github}>
               <a
-                href="Your_Facebok_Page"
+                href="Your_Github_Page"
                 target="_blank"
                 //title="Follow me on GitHub"
               >

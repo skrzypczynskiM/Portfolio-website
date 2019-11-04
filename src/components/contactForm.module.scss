@@ -658,26 +658,27 @@ input[type="checkbox"] {
 
 .container_other .linkedin a {
   padding: 7px 10px 7px 32px;
-  background: #136f9b url("../images/linkedIn.png") no-repeat center;
+  background: #136f9b url("../images/linkedIn_1.svg") no-repeat center;
   @media screen and (max-width: 1085px) {
     // padding: 0;
   }
 }
 
 .container_other .github a:hover {
-  @media screen and (max-width: 1085px) {
+  @media screen and (max-width: 1200px) {
     background-color: #5a32a39c;
   }
 }
 
 .container_other .gplus a:hover {
-  @media screen and (max-width: 1085px) {
+  @media screen and (max-width: 1200px) {
     background-color: rgb(191, 52, 40);
   }
 }
 .container_other .linkedin a:hover {
-  @media screen and (max-width: 1085px) {
-    background-color: rgb(15, 89, 125);
+  @media screen and (max-width: 1200px) {
+    background: #136f9b url("../images/linkedIn.svg") no-repeat center;
+    // rgba(15, 88, 125, 0.842);
   }
 }
 
