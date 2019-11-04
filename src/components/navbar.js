@@ -10,7 +10,7 @@ const NavBar = () => {
         <Link
           className={navbarStyles.navItem}
           activeClassName={navbarStyles.activeNavItem}
-          to="/home"
+          to="/home/"
           data-nav-text="home"
         >
           <i className={navbarStyles.michlIcon}></i>
@@ -20,7 +20,7 @@ const NavBar = () => {
         <Link
           className={navbarStyles.navItem}
           activeClassName={navbarStyles.activeNavItem}
-          to="/home"
+          to="/home/"
           data-nav-text="home"
         >
           <i className={`${navbarStyles.icon} ${navbarStyles.homeIcon}`}></i>
@@ -30,7 +30,7 @@ const NavBar = () => {
         <Link
           className={navbarStyles.navItem}
           activeClassName={navbarStyles.activeNavItem}
-          to="/about"
+          to="/about/"
           data-nav-text="about"
         >
           <i className={`${navbarStyles.icon} ${navbarStyles.aboutIcon}`}></i>
@@ -40,7 +40,7 @@ const NavBar = () => {
         <Link
           className={navbarStyles.navItem}
           activeClassName={navbarStyles.activeNavItem}
-          to="/skills"
+          to="/skills/"
           data-nav-text="skills"
         >
           <i className={`${navbarStyles.icon} ${navbarStyles.skillsIcon}`}></i>
@@ -50,7 +50,7 @@ const NavBar = () => {
         <Link
           className={navbarStyles.navItem}
           activeClassName={navbarStyles.activeNavItem}
-          to="/my-work"
+          to="/my-work/"
           data-nav-text="my work"
         >
           <i className={`${navbarStyles.icon} ${navbarStyles.myWorkIcon}`}></i>
@@ -60,7 +60,7 @@ const NavBar = () => {
         <Link
           className={navbarStyles.navItem}
           activeClassName={navbarStyles.activeNavItem}
-          to="/contact"
+          to="/contact/"
           data-nav-text="contact"
         >
           <i className={`${navbarStyles.icon} ${navbarStyles.contactIcon}`}></i>
