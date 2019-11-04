@@ -49,8 +49,8 @@ a[data-nav-text] {
   position: relative;
   display: block;
   background-image: none;
-  width: 20px;
-  height: 20px;
+  width: 27px;
+  height: 27px;
   text-align: center;
   background-position: center;
   background-repeat: no-repeat;
@@ -190,7 +190,7 @@ a[data-nav-text]:after {
 
   @media screen and (min-width: 1200px) {
     left: 1px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   @media screen and (min-width: 1550px) {
@@ -200,7 +200,8 @@ a[data-nav-text]:after {
 }
 
 a[data-nav-text="contact"]:after {
-  left: -11px;
+  left: -7px;
+  font-size: 1rem;
 }
 
 a[data-nav-text]:hover::after {

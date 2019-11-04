@@ -29,23 +29,53 @@ h1 {
   // color: #ae2dee;
   color: #cb70f8;
 
-  margin: 35px 0;
+  margin: 35px 0 10px 0;
 
   @media screen and (min-width: 720px) {
     margin-top: 40px;
+    // margin-bottom: 10px;
+
     font-size: 6rem;
   }
 
   @media screen and (min-width: 1028px) {
+    // margin-bottom: 10px;
     font-size: 6.5rem;
   }
   @media screen and (min-width: 1200px) {
-    margin-top: 25px;
-    font-size: 9rem;
+    margin-top: 10px;
+    font-size: 7rem;
   }
   @media screen and (min-width: 1550px) {
     font-size: 10rem;
     margin-top: 25px;
+  }
+}
+
+.contactInfo {
+  color: #bdbdbd;
+  //max-width: 750px;
+  margin: 0 auto;
+  font-size: 1.7rem;
+  // margin-left: 30px;
+
+  @media screen and (min-width: 720px) {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  @media screen and (min-width: 1028px) {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 2.2rem;
+    margin-bottom: 0.5rem;
+  }
+  @media screen and (min-width: 1550px) {
+    font-size: 3.5rem;
+    margin: 25px 0;
   }
 }
 
@@ -178,13 +208,13 @@ textarea {
   color: #e6e4e4;
 
   @media screen and (min-width: 1200px) {
-    height: 65px;
-    font-size: 2.4rem;
+    height: 50px;
+    font-size: 1.6rem;
   }
 
   @media screen and (min-width: 1550px) {
-    height: 80px;
-    font-size: 3.2rem;
+    height: 65px;
+    font-size: 2.4rem;
   }
 
   // box-shadow: inset 0 0 20px 0 rgba(243, 91, 91, 0.5);
@@ -199,16 +229,19 @@ textarea {
   height: 200px;
   text-align: left;
   color: #e6e4e4;
+  font-size: 2rem;
+  // padding-top: 10px;
+  padding: 10px 20px;
 
   @media screen and (min-width: 1200px) {
-    height: 260px;
-    font-size: 3.2rem;
+    height: 200px;
+    font-size: 2rem;
   }
 
   @media screen and (min-width: 1550px) {
-    height: 320px;
-    font-size: 4rem;
-    padding: 15px 20px;
+    height: 260px;
+    font-size: 2.9rem;
+    // padding: 15px 20px;
   }
 }
 
@@ -437,10 +470,10 @@ input[type="checkbox"] {
   }
 
   @media screen and (min-width: 1200px) {
-    width: 160px;
-    padding: 7.5px;
+    width: 140px;
+    padding: 6.5px;
 
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 
   @media screen and (min-width: 1550px) {
@@ -453,33 +486,6 @@ input[type="checkbox"] {
     box-shadow: 0 1px 5px rgba(189, 105, 175, 0.46);
     border: 1px solid #d17ffa;
     color: #d17ffa;
-  }
-}
-
-.contactInfo {
-  color: #bdbdbd;
-  //max-width: 750px;
-  margin: 0 auto;
-  font-size: 1.7rem;
-  // margin-left: 30px;
-
-  @media screen and (min-width: 720px) {
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-  }
-
-  @media screen and (min-width: 1028px) {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-  }
-
-  @media screen and (min-width: 1200px) {
-    font-size: 3.2rem;
-    margin-bottom: 0.5rem;
-  }
-  @media screen and (min-width: 1550px) {
-    font-size: 3.5rem;
-    margin: 25px 0;
   }
 }
 

@@ -114,7 +114,7 @@ const ContactForm = () => {
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
               noValidate
-              autocomplete="off"
+              // autocomplete="off"
               // autocomplete="new-password"
             >
               <ul className={contactStyles.box}>
@@ -145,7 +145,7 @@ const ContactForm = () => {
                               onFocus={handleFocus}
                               onBlur={handleFocus}
                               onChange={handleChange}
-                              // autocomplete="off"
+                              autocomplete="off"
                             />
                           </span>
                         </span>
