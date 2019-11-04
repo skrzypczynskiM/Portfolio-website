@@ -9,10 +9,16 @@
   width: 100vw;
   display: flex;
   flex-direction: column;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   flex: 1 0 auto;
+  // padding-bottom: 50px;
+  margin-bottom: 60px;
   // overflow-y: scroll;
   // height: 100vh;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 120px;
+  }
 }
 
 h1 {
