@@ -1,9 +1,10 @@
 .Typist .Cursor {
   display: inline-block;
-  font-size: 4.2rem;
   color: #cb70f8;
-  // width: 100%;
-  // margin: 0 auto;
+  font-size: 3.4rem;
+  @media screen and (min-width: 1200px) {
+    font-size: 4.2rem;
+  }
 
   &--blinking {
     opacity: 1;

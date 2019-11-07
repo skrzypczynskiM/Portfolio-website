@@ -25,7 +25,7 @@ const homeNav = () => {
         </li>
 
         <li>
-          Feel free to take a look at my latest projects <br /> on
+          Feel free to take a look at my latest projects on <br />
           <Link to="/my-work/" className={homeStyle.link}>
             <span className={`${homeStyle.hover} ${homeStyle.hover_2}`}>
               {" "}

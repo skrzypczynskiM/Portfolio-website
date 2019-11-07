@@ -234,8 +234,12 @@ a[data-nav-text]:hover::after {
 }
 
 nav > li:first-child {
-  margin-right: 20vw;
+  margin-right: 8vw;
   left: 0;
+
+  @media screen and (min-width: 720px) {
+    margin-right: auto;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 20vh;
