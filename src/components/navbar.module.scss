@@ -9,6 +9,7 @@
   background: #212121;
   // position: fixed;
   position: absolute;
+
   //z-index: 100;   deleted
   height: auto;
   width: 100%;
@@ -54,8 +55,8 @@ a[data-nav-text] {
   position: relative;
   display: block;
   background-image: none;
-  width: 27px;
-  height: 27px;
+  width: 33px;
+  height: 33px;
   text-align: center;
   background-position: center;
   background-repeat: no-repeat;
@@ -63,8 +64,8 @@ a[data-nav-text] {
   opacity: 1;
 
   @media screen and (min-width: 720px) {
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 37px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -208,7 +209,15 @@ a[data-nav-text]:after {
 
 a[data-nav-text="contact"]:after {
   left: -7px;
-  font-size: 1rem;
+  font-size: 0.8rem;
+
+  @media screen and (min-width: 720px) {
+    font-size: 1.1rem;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 0.9rem;
+    left: -5px;
+  }
 }
 
 a[data-nav-text]:hover::after {
@@ -246,7 +255,7 @@ nav > li:first-child {
   // background-size: cover; /* Resize the background image to cover the entire container */
   // background-size: 40px;
   width: 65px;
-  height: 28px;
+  height: 35px;
   z-index: 555;
 
   @media screen and (min-width: 1200px) {
