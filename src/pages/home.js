@@ -1,14 +1,14 @@
 import React from "react"
 import Layout from "../components/layout"
+import Head from "../components/head"
+
+import HomePage from "../components/homePage"
 
 const Home = () => {
   return (
     <Layout>
-      <div>
-        <h1>Hi,</h1>
-        <p>I'm Michl,</p>
-        <p>Front-End Web Developer.</p>
-      </div>
+      <Head title="Home" />
+      <HomePage />
     </Layout>
   )
 }
