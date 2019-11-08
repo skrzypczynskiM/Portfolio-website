@@ -14,6 +14,13 @@ module.exports = {
     //   },
     // },
     // "gatsby-transformer-inline-svg",
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        color: `#cb70f8`,
+        showSpinner: true,
+      },
+    },
     "gatsby-plugin-sass",
     `gatsby-plugin-react-helmet`,
     {

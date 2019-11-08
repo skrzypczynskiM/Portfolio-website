@@ -140,12 +140,12 @@
 
 .whoIAm .welcome:nth-of-type(1)::before,
 .whoIAm .welcome:nth-of-type(1)::after {
-  animation-delay: 0.1s;
+  animation-delay: 0.4s;
 }
 
 .whoIAm .welcome:nth-of-type(2)::before,
 .whoIAm .welcome:nth-of-type(2)::after {
-  animation-delay: 0.2s;
+  animation-delay: 0.5s;
 }
 
 @keyframes a-ltr-after {
@@ -171,12 +171,18 @@
   color: #bdbdbd;
   animation-name: navReveal;
   animation-duration: 1.7s;
-  width: 45%;
+  width: 100%;
   text-align: left;
+  padding: 0 5%;
 
   @media screen and (min-width: 720px) {
     font-size: 2.4rem;
     // line-height: 1.2;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 2.4rem;
+    // padding: 0 55%;
   }
 
   & li {

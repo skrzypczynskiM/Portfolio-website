@@ -51,7 +51,7 @@ const NavBar = () => {
           <i className={`${navbarStyles.icon} ${navbarStyles.myWorkIcon}`}></i>
         </Link>
       </li>
-      <li>
+      <li className={navbarStyles.contact}>
         <Link
           className={navbarStyles.navItem}
           activeClassName={navbarStyles.activeNavItem}
@@ -60,6 +60,27 @@ const NavBar = () => {
         >
           <i className={`${navbarStyles.icon} ${navbarStyles.contactIcon}`}></i>
         </Link>
+      </li>
+      <li className={`${navbarStyles.firstSocial} ${navbarStyles.showDesktop}`}>
+        <a
+          className={navbarStyles.navItem}
+          href="https://github.com/justFlow5/gatsby-portfolio"
+          data-nav-text=""
+        >
+          <i className={`${navbarStyles.icon} ${navbarStyles.githubIcon}`}></i>
+        </a>
+      </li>
+      <li className={navbarStyles.showDesktop}>
+        <a className={navbarStyles.navItem} href="" data-nav-text="">
+          <i className={`${navbarStyles.icon} ${navbarStyles.googleIcon}`}></i>
+        </a>
+      </li>
+      <li className={navbarStyles.showDesktop}>
+        <a className={navbarStyles.navItem} href="" data-nav-text="">
+          <i
+            className={`${navbarStyles.icon} ${navbarStyles.linkedInIcon}`}
+          ></i>
+        </a>
       </li>
     </nav>
   )
