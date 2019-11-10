@@ -1,12 +1,12 @@
 import React from "react"
 
-import Header from "../components/header"
 import Head from "../components/head"
 
 import Layout from "../components/layout"
 
 import indexStyles from "./index.module.scss"
 
+import HomePage from "../components/homePage"
 require("../styles/index.scss")
 
 const IndexPage = () => {
@@ -14,7 +14,7 @@ const IndexPage = () => {
     <div className={indexStyles.container}>
       <Layout>
         <Head title="Home" />
-        <Header />
+        <HomePage />
       </Layout>
     </div>
   )
