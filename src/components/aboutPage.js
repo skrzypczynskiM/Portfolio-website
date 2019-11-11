@@ -7,7 +7,7 @@ const aboutPage = () => {
     <div className={aboutStyles.aboutPage}>
       <div className={aboutStyles.aboutMe}>
         {/*  QUOOOOOOTE */}
-        <div className={aboutStyles.blockquoteWrapper}>
+        {/* <div className={aboutStyles.blockquoteWrapper}>
           <div className={aboutStyles.blockquote}>
             <h1>
               Success consists of{" "}
@@ -18,18 +18,30 @@ const aboutPage = () => {
             </h1>
             <h4 className={aboutStyles.style}>
               {" "}
-              <br /> &mdash; Winston Churchill
+              <br /> Winston Churchill
             </h4>
           </div>
+        </div> */}
+        {/*  */}
+        <div className={aboutStyles.quoteWrapper}>
+          <blockquote>
+            <h3>
+              Success consists of{" "}
+              <span className={aboutStyles.style}>
+                going from failure to failure without loss of{" "}
+              </span>
+              enthusiasm.
+            </h3>
+          </blockquote>{" "}
+          <cite>Winston Churchill</cite>
         </div>
-
+        {/*  */}
         {/* NED OF QUOOOOOOTE */}
         {/* <button className={aboutStyles.button1}>
           Fancy Button
           <div className={aboutStyles.horizontal}></div>
           <div className={aboutStyles.vertical}></div>
         </button> */}
-
         <div className={aboutStyles.meInfo}>
           <div className={aboutStyles.button1}>
             <h1>About me</h1>
@@ -57,9 +69,7 @@ const aboutPage = () => {
             </div>
           </div>
         </div>
-
         {/* END OF JOURNEYYYYY */}
-
         {/* <div className={aboutStyles.mePersonality}>
           <h1>As a person</h1>
           <p className={aboutStyles.theBeginnings}>
