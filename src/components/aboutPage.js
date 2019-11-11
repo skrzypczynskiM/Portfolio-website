@@ -1,8 +1,15 @@
-import React from "react"
-import NavBar from "../components/navbar"
+import React, { useState } from "react"
 import aboutStyles from "./about.module.scss"
 
-const aboutPage = () => {
+const AboutPage = () => {
+  const [isDesktop, setBorder] = useState(false)
+
+  const setBorderFunction = () => {
+    const windowWidth = window.innerWidth
+    if (windowWidth >= 720) setBorder(true)
+    else setBorder(false)
+  }
+
   return (
     <div className={aboutStyles.aboutPage}>
       <div className={aboutStyles.aboutMe}>
@@ -25,13 +32,13 @@ const aboutPage = () => {
         {/*  */}
         <div className={aboutStyles.quoteWrapper}>
           <blockquote>
-            <h3>
+            <h4 className={aboutStyles.purple}>
               Success consists of{" "}
-              <span className={aboutStyles.style}>
+              <span className={aboutStyles.gray}>
                 going from failure to failure without loss of{" "}
               </span>
               enthusiasm.
-            </h3>
+            </h4>
           </blockquote>{" "}
           <cite>Winston Churchill</cite>
         </div>
@@ -45,8 +52,12 @@ const aboutPage = () => {
         <div className={aboutStyles.meInfo}>
           <div className={aboutStyles.button1}>
             <h1>About me</h1>
-            <div className={aboutStyles.horizontal}></div>
-            <div className={aboutStyles.vertical}></div>
+            <div
+              className={`${aboutStyles.horizontal} ${aboutStyles.forDesktop}`}
+            ></div>
+            <div
+              className={`${aboutStyles.vertical} ${aboutStyles.forDesktop}`}
+            ></div>
             <div className={aboutStyles.theBeginnings}>
               <p>
                 My journey with programming started in 2015, alongside with
@@ -83,4 +94,4 @@ const aboutPage = () => {
   )
 }
 
-export default aboutPage
+export default AboutPage
