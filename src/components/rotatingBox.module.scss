@@ -1,0 +1,174 @@
+$mobile-cube-size: 100px;
+$small-cube-size: 100px;
+$medium-cube-size: 150px;
+$big-cube-size: 200px;
+
+$mobile-space: 50px;
+$small-space: 50px;
+$medium-space: 75px;
+$big-space: 100px;
+
+.wrap {
+  margin-top: 80px;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+}
+
+.cube {
+  transform-style: preserve-3d;
+  width: $small-cube-size;
+  height: $small-cube-size;
+  margin: auto;
+  position: relative;
+  animation: loop 10s linear infinite;
+
+  @media screen and (min-width: 720px) {
+    width: $small-cube-size;
+    height: $small-cube-size;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: $big-cube-size;
+    height: $big-cube-size;
+  }
+
+  // @media screen and (min-width: 1550px) {
+  //   width: $big-cube-size;
+  //   height: $big-cube-size;
+  // }
+
+  & > div {
+    position: absolute;
+    opacity: 0.8;
+    width: $mobile-cube-size;
+    height: $mobile-cube-size;
+    background-color: rgb(136, 136, 136);
+    background-color: rgb(133, 133, 133);
+    background-position: center;
+    background-size: cover;
+
+    @media screen and (min-width: 720px) {
+      width: $medium-cube-size;
+      height: $medium-cube-size;
+    }
+
+    @media screen and (min-width: 1200px) {
+      width: $medium-cube-size;
+      height: $medium-cube-size;
+    }
+
+    @media screen and (min-width: 1550px) {
+      width: $big-cube-size;
+      height: $big-cube-size;
+    }
+  }
+
+  & div:nth-child(1) {
+    transform: rotateX(90deg) translateZ($mobile-space);
+    background-image: url("../images/react_3.svg");
+
+    @media screen and (min-width: 720px) {
+      transform: rotateX(90deg) translateZ($medium-space);
+    }
+
+    @media screen and (min-width: 1200px) {
+      transform: rotateX(90deg) translateZ($medium-space);
+    }
+
+    @media screen and (min-width: 1550px) {
+      transform: rotateX(90deg) translateZ($big-space);
+    }
+  }
+
+  & div:nth-child(2) {
+    transform: rotateX(0deg) translateZ(-$mobile-space);
+    background-image: url("../images/Nodejs.svg");
+
+    @media screen and (min-width: 720px) {
+      transform: rotateX(0deg) translateZ(-$medium-space);
+    }
+
+    @media screen and (min-width: 1200px) {
+      transform: rotateX(0deg) translateZ(-$medium-space);
+    }
+
+    @media screen and (min-width: 1550px) {
+      transform: rotateX(0deg) translateZ(-$big-space);
+    }
+  }
+
+  & div:nth-child(3) {
+    transform: rotateY(90deg) translateZ($mobile-space);
+    background-image: url("../images/CSS_logo.svg");
+
+    @media screen and (min-width: 720px) {
+      transform: rotateY(90deg) translateZ($medium-space);
+    }
+
+    @media screen and (min-width: 1200px) {
+      transform: rotateY(90deg) translateZ($medium-space);
+    }
+
+    @media screen and (min-width: 1550px) {
+      transform: rotateY(90deg) translateZ($big-space);
+    }
+  }
+
+  & div:nth-child(4) {
+    transform: rotateY(90deg) translateZ(-$mobile-space);
+    background-image: url("../images/redux.svg");
+
+    @media screen and (min-width: 720px) {
+      transform: rotateY(90deg) translateZ(-$medium-space);
+    }
+
+    @media screen and (min-width: 1200px) {
+      transform: rotateY(90deg) translateZ(-$medium-space);
+    }
+
+    @media screen and (min-width: 1550px) {
+      transform: rotateY(90deg) translateZ(-$big-space);
+    }
+  }
+  & div:nth-child(5) {
+    transform: rotateY(0deg) translateZ($mobile-space);
+    background-image: url("../images/html5.svg");
+
+    @media screen and (min-width: 720px) {
+      transform: rotateY(0deg) translateZ($medium-space);
+    }
+
+    @media screen and (min-width: 1200px) {
+      transform: rotateY(0deg) translateZ($medium-space);
+    }
+
+    @media screen and (min-width: 1550px) {
+      transform: rotateY(0deg) translateZ($big-space);
+    }
+  }
+  & div:nth-child(6) {
+    transform: rotateX(-90deg) translateZ($mobile-space);
+    background-image: url("../images/javascript.svg");
+
+    @media screen and (min-width: 720px) {
+      transform: rotateX(-90deg) translateZ($medium-space);
+    }
+
+    @media screen and (min-width: 1200px) {
+      transform: rotateX(-90deg) translateZ($medium-space);
+    }
+
+    @media screen and (min-width: 1550px) {
+      transform: rotateX(-90deg) translateZ($big-space);
+    }
+  }
+}
+
+@keyframes loop {
+  from {
+    transform: rotateX(0deg) rotateY(0deg);
+  }
+  to {
+    transform: rotateX(360deg) rotateY(360deg);
+  }
+}

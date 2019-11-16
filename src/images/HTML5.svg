@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   viewBox="0 0 512 512"
+   version="1.1"
+   id="svg2461"
+   sodipodi:docname="HTML5.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <metadata
+     id="metadata2467">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs2465" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="715"
+     id="namedview2463"
+     showgrid="false"
+     inkscape:zoom="0.4609375"
+     inkscape:cx="256"
+     inkscape:cy="256"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2461" />
+  <title
+     id="title2451">HTML5 Logo Badge</title>
+  <path
+     d="M 106.69799,350.47457 73.389833,34.711871 H 439.77966 L 406.4715,350.47457 256.17855,386.16949"
+     id="path2453"
+     inkscape:connector-curvature="0"
+     style="fill:#e34f26;stroke-width:0.74676669" />
+  <path
+     d="M 256.99094,358.71187 378.0377,330.5678 406.4715,60.11017 H 256.99094"
+     id="path2455"
+     inkscape:connector-curvature="0"
+     style="fill:#ef652a;stroke-width:0.74676669" />
+  <path
+     d="m 256.99094,177.49153 h -60.92958 l -4.06195,-39.81356 h 64.99153 V 99.237298 h -0.81239 -114.5476 l 0.81239,10.296602 11.37352,107.08475 h 103.17408 z m 0,100.90678 h -0.81239 L 204.99771,266.7288 201.74813,235.83898 H 177.3763 156.25406 l 5.68674,61.09322 94.23775,21.96611 h 0.81239 z"
+     id="path2457"
+     inkscape:connector-curvature="0"
+     style="fill:#ebebeb;stroke-width:0.74676669" />
+  <path
+     d="m 256.17855,177.49153 v 39.12712 h 56.8676 l -5.68677,50.11015 -51.18083,11.66951 v 40.5 l 94.23773,-21.96611 0.81239,-6.8644 10.56113,-102.27967 1.62481,-10.2966 h -12.99833 z m 0,-78.254232 v 24.025412 14.41526 0 h 111.29801 v 0 0 l 0.8124,-8.2373 2.43719,-19.90677 0.81239,-10.296602 z"
+     id="path2459"
+     inkscape:connector-curvature="0"
+     style="fill:#ffffff;stroke-width:0.74676669" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:90.27559662px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.53333336;stroke:#000000;stroke-width:2.25689483;stroke-opacity:1;"
+     x="125.18298"
+     y="515.58362"
+     id="text3014"
+     transform="scale(1.0951697,0.91310051)"><tspan
+       sodipodi:role="line"
+       id="tspan3012"
+       x="125.18298"
+       y="515.58362"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:condensed;font-size:90.27559662px;font-family:Arial;-inkscape-font-specification:'Arial, Bold Condensed';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:0.53333336;stroke-width:2.25689483;stroke:#000000;stroke-opacity:1;">HTML</tspan></text>
+</svg>

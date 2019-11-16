@@ -10,6 +10,10 @@
   width: 100%;
   z-index: 999;
 
+  @media screen and (min-width: 1200px) {
+    position: fixed;
+  }
+
   & li {
     opacity: 1;
     transition: opacity 0.3 ease-in-out;
@@ -288,3 +292,25 @@ nav > .firstSocial {
     background-image: url("../images/THIS_LOGO3.svg");
   }
 }
+
+.socialIcons {
+  display: none;
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+  }
+}
+
+// .fixedForDesktop {
+//   display: none;
+
+//   @media screen and (min-width: 1200px) {
+//     display: flex;
+//     position: fixed;
+//     flex-direction: column;
+//   }
+// }
