@@ -46,7 +46,7 @@ const NavBar = () => {
         <Link
           className={navbarStyles.navItem}
           activeClassName={navbarStyles.activeNavItem}
-          to='/my-work/'
+          to='/myWork/'
           data-nav-text='my work'
         >
           <i className={`${navbarStyles.icon} ${navbarStyles.myWorkIcon}`}></i>

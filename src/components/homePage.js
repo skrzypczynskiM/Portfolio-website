@@ -24,13 +24,15 @@ const HomePage = () => {
         <div className={homeStyle.isTyping}>
           {/* {!this.state.isHidden && <Child />} */}
 
-          <AnimatedText1
-            isTyped1={isTyped1}
-            isTyped2={isTyped2}
-            showCursor={showCursor}
-            showWhoIAm={showWhoIAm}
-          />
-          {isTyped2 && <WhoIAm />}
+          <div className={homeStyle.container}>
+            <AnimatedText1
+              isTyped1={isTyped1}
+              isTyped2={isTyped2}
+              showCursor={showCursor}
+              showWhoIAm={showWhoIAm}
+            />
+            {isTyped2 && <WhoIAm />}
+          </div>
         </div>
       </div>
     </div>

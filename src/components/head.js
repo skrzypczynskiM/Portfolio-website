@@ -12,7 +12,7 @@ const Head = ({ title }) => {
   //       }
   //     }
   //   `)
-  return <Helmet title={`${title} | Michl`} />
+  return <Helmet title={`${title} | Just Flow`} />
 }
 
 export default Head

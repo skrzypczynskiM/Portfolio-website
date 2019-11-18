@@ -4,7 +4,7 @@ import NavBar from "../components/navbar"
 import "../styles/index.scss"
 import layoutStyles from "./layout.module.scss"
 
-const Layout = props => {
+const Layout = (props) => {
   return (
     // <div className={layoutStyles.container222}>
     //   <div className={layoutStyles.container}>

@@ -6,10 +6,13 @@ const WhoIAm = () => {
   return (
     <div className={homeStyle.whoIAm}>
       <div className={homeStyle.face}></div>
-      <span className={homeStyle.welcome}>Hello, I'm Michael,</span>
-      <span className={homeStyle.welcome}>Front-end developer.</span>
+      <div className={homeStyle.navContainer}>
+        <span className={homeStyle.welcome}>Hello, I'm Michael,</span>
+        <br />
+        <span className={homeStyle.welcome}>Front-end developer.</span>
 
-      <HomeNav />
+        <HomeNav />
+      </div>
     </div>
   )
 }
