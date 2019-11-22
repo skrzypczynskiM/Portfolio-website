@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 import projectStyles from "./portfolio.module.scss"
 
 import Slider from "../components/slider"
-import "react-responsive-carousel/lib/styles/carousel.min.css"
+import "./carousel.min.css"
 
 export const query = graphql`
   query($slug: String!) {
