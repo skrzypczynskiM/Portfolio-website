@@ -9,7 +9,7 @@ const homeNav = () => {
       <ul>
         <li>
           Do some research{" "}
-          <Link to='/about/' className={homeStyle.link}>
+          <Link to="/about/" className={homeStyle.link}>
             <span className={`${homeStyle.hover} ${homeStyle.hover_2}`}>
               about me.
             </span>
@@ -17,18 +17,18 @@ const homeNav = () => {
         </li>
 
         <li>
-          Check out my current list of
-          <Link to='/my-work/' className={homeStyle.link}>
+          Check out my current
+          <Link to="/my-work/" className={homeStyle.link}>
             <span className={`${homeStyle.hover} ${homeStyle.hover_2}`}>
               {" "}
-              skills.
+              list of skills.
             </span>
           </Link>
         </li>
 
         <li>
           Feel free to take a look at my latest projects <br />
-          <Link to='/my-work/' className={homeStyle.link}>
+          <Link to="/my-work/" className={homeStyle.link}>
             <span className={`${homeStyle.hover} ${homeStyle.hover_2}`}>
               {" "}
               on the web portfolio page.
@@ -37,7 +37,7 @@ const homeNav = () => {
         </li>
         <li>
           Got you interested?{" "}
-          <Link to='/contact/' className={homeStyle.link}>
+          <Link to="/contact/" className={homeStyle.link}>
             <span className={`${homeStyle.hover} ${homeStyle.hover_2}`}>
               Contact me.
             </span>

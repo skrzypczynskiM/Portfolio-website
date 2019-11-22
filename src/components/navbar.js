@@ -8,7 +8,7 @@ const NavBar = () => {
     <nav className={navbarStyles.navList}>
       {/* <nav className={`${navbarStyles.navList} ${navbarStyles.fixedForDesktop}`}></nav> */}
       <li>
-        <Link to='/home/'>
+        <Link to="/home/">
           <i className={navbarStyles.michlIcon}></i>
         </Link>
       </li>
@@ -16,8 +16,8 @@ const NavBar = () => {
         <Link
           className={navbarStyles.navItem}
           activeClassName={navbarStyles.activeNavItem}
-          to='/home/'
-          data-nav-text='home'
+          to="/home/"
+          data-nav-text="home"
         >
           <i className={`${navbarStyles.icon} ${navbarStyles.homeIcon}`}></i>
         </Link>
@@ -26,8 +26,8 @@ const NavBar = () => {
         <Link
           className={navbarStyles.navItem}
           activeClassName={navbarStyles.activeNavItem}
-          to='/about/'
-          data-nav-text='about'
+          to="/about/"
+          data-nav-text="about"
         >
           <i className={`${navbarStyles.icon} ${navbarStyles.aboutIcon}`}></i>
         </Link>
@@ -36,8 +36,8 @@ const NavBar = () => {
         <Link
           className={navbarStyles.navItem}
           activeClassName={navbarStyles.activeNavItem}
-          to='/skills/'
-          data-nav-text='skills'
+          to="/skills/"
+          data-nav-text="skills"
         >
           <i className={`${navbarStyles.icon} ${navbarStyles.skillsIcon}`}></i>
         </Link>
@@ -46,8 +46,9 @@ const NavBar = () => {
         <Link
           className={navbarStyles.navItem}
           activeClassName={navbarStyles.activeNavItem}
-          to='/myWork/'
-          data-nav-text='my work'
+          to="/portfolio/"
+          partiallyActive={true}
+          data-nav-text="my work"
         >
           <i className={`${navbarStyles.icon} ${navbarStyles.myWorkIcon}`}></i>
         </Link>
@@ -56,8 +57,8 @@ const NavBar = () => {
         <Link
           className={navbarStyles.navItem}
           activeClassName={navbarStyles.activeNavItem}
-          to='/contact/'
-          data-nav-text='contact'
+          to="/contact/"
+          data-nav-text="contact"
         >
           <i className={`${navbarStyles.icon} ${navbarStyles.contactIcon}`}></i>
         </Link>
@@ -66,19 +67,19 @@ const NavBar = () => {
       <li className={`${navbarStyles.firstSocial} ${navbarStyles.showDesktop}`}>
         <a
           className={navbarStyles.navItem}
-          href='https://github.com/justFlow5/gatsby-portfolio'
-          data-nav-text=''
+          href="https://github.com/justFlow5/gatsby-portfolio"
+          data-nav-text=""
         >
           <i className={`${navbarStyles.icon} ${navbarStyles.githubIcon}`}></i>
         </a>
       </li>
       <li className={navbarStyles.showDesktop}>
-        <a className={navbarStyles.navItem} href='' data-nav-text=''>
+        <a className={navbarStyles.navItem} href="" data-nav-text="">
           <i className={`${navbarStyles.icon} ${navbarStyles.googleIcon}`}></i>
         </a>
       </li>
       <li className={navbarStyles.showDesktop}>
-        <a className={navbarStyles.navItem} href='' data-nav-text=''>
+        <a className={navbarStyles.navItem} href="" data-nav-text="">
           <i
             className={`${navbarStyles.icon} ${navbarStyles.linkedInIcon}`}
           ></i>

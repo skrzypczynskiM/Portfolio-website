@@ -102,7 +102,7 @@ const ContactForm = () => {
           <h1>Get in touch</h1>
           <p className={contactStyles.contactInfo}>
             If you wanna get in touch, talk to me about a project collaboration
-            or just say hi, fill up the awesome form below
+            or just say hi, fill up the awesome form below.
           </p>
 
           {/* <div className={contactStyles.container}> */}
@@ -145,7 +145,7 @@ const ContactForm = () => {
                               onFocus={handleFocus}
                               onBlur={handleFocus}
                               onChange={handleChange}
-                              autocomplete="off"
+                              autoComplete="off"
                             />
                           </span>
                         </span>
@@ -183,7 +183,7 @@ const ContactForm = () => {
                               onFocus={handleFocus}
                               onBlur={handleFocus}
                               onChange={handleChange}
-                              autocomplete="new-password"
+                              autoComplete="new-password"
                             />
 
                             {errors.email && (
@@ -221,7 +221,7 @@ const ContactForm = () => {
                             onFocus={handleFocus}
                             onBlur={handleFocus}
                             onChange={handleChange}
-                            autocomplete="off"
+                            autoComplete="off"
                           />
                         </span>
                       </span>
@@ -286,49 +286,50 @@ const ContactForm = () => {
               </ul>
             </form>
           </div>
-        </div>
-        <div className={contactStyles.entrySocial}>
-          <div className={contactStyles.forMobile}>
-            <h3>Wanna know more about me?</h3>
-            <p className={contactStyles.moreInfo}>
-              Worry not! You can always catch me on Gmail, LinkedIn or GitHub.
-            </p>
-          </div>
+          {/* </div> */}
+          <div className={contactStyles.entrySocial}>
+            <div className={contactStyles.forMobile}>
+              <h3>Wanna know more about me?</h3>
+              <p className={contactStyles.moreInfo}>
+                Worry not! You can always catch me on Gmail, LinkedIn or GitHub.
+              </p>
+            </div>
 
-          <div className={contactStyles.container_other}>
-            <div>Follow me</div>
-            <div className={contactStyles.github}>
-              <a
-                href="Your_Github_Page"
-                target="_blank"
-                //title="Follow me on GitHub"
-              >
-                GitHub
-              </a>
-            </div>
-            <div className={contactStyles.gplus}>
-              <a
-                href="Your_Googleplus_Follow"
-                target="_blank"
-                // title="Send me an email"
-              >
-                Google+
-              </a>
-            </div>
-            <div className={contactStyles.linkedin}>
-              <a
-                href="Your_Linkedin_Profile"
-                target="_blank"
-                // title="Connect on LinkedIn"
-              >
-                Linkedin
-              </a>
+            <div className={contactStyles.container_other}>
+              <div>Follow me</div>
+              <div className={contactStyles.github}>
+                <a
+                  href="Your_Github_Page"
+                  target="_blank"
+                  //title="Follow me on GitHub"
+                >
+                  GitHub
+                </a>
+              </div>
+              <div className={contactStyles.gplus}>
+                <a
+                  href="Your_Googleplus_Follow"
+                  target="_blank"
+                  // title="Send me an email"
+                >
+                  Google+
+                </a>
+              </div>
+              <div className={contactStyles.linkedin}>
+                <a
+                  href="Your_Linkedin_Profile"
+                  target="_blank"
+                  // title="Connect on LinkedIn"
+                >
+                  Linkedin
+                </a>
+              </div>
             </div>
           </div>
         </div>
+        {/* <FollowMe /> */}
+        {/* </div> */}
       </div>
-      {/* <FollowMe /> */}
-      {/* </div> */}
     </div>
   )
 }

@@ -1,8 +1,22 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from "gatsby"
 import myWorkPageStyles from "./myWorkPage.module.scss"
 
 const MyWorkPage = () => {
+  // const data = useStaticQuery(graphql`
+  //   query {
+  //     allFile {
+  //       edges {
+  //         node {
+  //           fields {
+  //             slug
+  //           }
+  //         }
+  //       }
+  //     }
+  //   }
+  // `)
+
   return (
     <div className={myWorkPageStyles.portfolioPage}>
       <div className={myWorkPageStyles.container}>
@@ -14,56 +28,63 @@ const MyWorkPage = () => {
         </p>
       </div>
       <article className={myWorkPageStyles.gallery}>
-        <Link to='/about/' className={myWorkPageStyles.galleryLink}>
+        {/* {data.allFile.edges.map((edge) => {
+        return  */}
+        <Link
+          // to={`/portfolio/${data.allFile.edges.node.fields.slug}`}
+          to={`/portfolio/expensify`}
+          className={myWorkPageStyles.galleryLink}
+        >
           <figure className={myWorkPageStyles.galleryImage}>
             <img
-              src='https://unsplash.it/1200/1400?image=1081'
-              width={1200}
-              height={1400}
+              src="https://unsplash.it/1200/1400?image=1081"
+              // width={1200}
+              // height={1400}
             />
             <figcaption>View Project</figcaption>
           </figure>
         </Link>
-        <a
+        {/* <a
           className={myWorkPageStyles.galleryLink}
           href='https://unsplash.it/1200/1000?image=1014'
         >
           <figure className={myWorkPageStyles.galleryImage}>
             <img
               src='https://unsplash.it/1200/1000?image=1014'
-              width={1200}
-              height={1000}
+              // width={1200}
+              // height={1000}
             />
             <figcaption>View Project</figcaption>
           </figure>
-        </a>
-        <a
+        </a> */}
+        <Link
+          // to={`/portfolio/${data.allFile.edges.node.fields.slug}`}
+          to={`/portfolio/flowingFish`}
           className={myWorkPageStyles.galleryLink}
-          href='https://unsplash.it/1600/1600?image=267'
         >
           <figure className={myWorkPageStyles.galleryImage}>
             <img
-              src='https://unsplash.it/1600/1600?image=267'
-              width={1600}
+              src="https://unsplash.it/1600/1600?image=267"
+              // width={1600}
+              // height={1600}
+            />
+            <figcaption>View Project</figcaption>
+          </figure>
+        </Link>
+        <a
+          className={myWorkPageStyles.galleryLink}
+          href="https://unsplash.it/1200/1600?image=266"
+        >
+          <figure className={myWorkPageStyles.galleryImage}>
+            <img
+              src="https://unsplash.it/1200/1600?image=266"
+              width={1200}
               height={1600}
             />
             <figcaption>View Project</figcaption>
           </figure>
         </a>
         {/* <a
-          className={myWorkPageStyles.galleryLink}
-          href='https://unsplash.it/1200/1600?image=266'
-        >
-          <figure className={myWorkPageStyles.galleryImage}>
-            <img
-              src='https://unsplash.it/1200/1600?image=266'
-              width={1200}
-              height={1600}
-            />
-            <figcaption>View Project</figcaption>
-          </figure>
-        </a>
-        <a
           className={myWorkPageStyles.galleryLink}
           href='https://unsplash.it/1600/1200?image=634'
         >
@@ -75,21 +96,21 @@ const MyWorkPage = () => {
             />
             <figcaption>View Project</figcaption>
           </figure>
-        </a>
+        </a> */}
         <a
           className={myWorkPageStyles.galleryLink}
-          href='https://unsplash.it/1600/1600?image=923'
+          href="https://unsplash.it/1600/1600?image=923"
         >
           <figure className={myWorkPageStyles.galleryImage}>
             <img
-              src='https://unsplash.it/1600/1600?image=923'
+              src="https://unsplash.it/1600/1600?image=923"
               width={1600}
               height={1600}
             />
             <figcaption>View Project</figcaption>
           </figure>
         </a>
-        <a
+        {/* <a
           className={myWorkPageStyles.galleryLink}
           href='https://unsplash.it/1600/1400?image=682'
         >
@@ -101,21 +122,21 @@ const MyWorkPage = () => {
             />
             <figcaption>View Project</figcaption>
           </figure>
-        </a>
+        </a> */}
         <a
           className={myWorkPageStyles.galleryLink}
-          href='https://unsplash.it/1200/1200?image=173'
+          href="https://unsplash.it/1200/1200?image=173"
         >
           <figure className={myWorkPageStyles.galleryImage}>
             <img
-              src='https://unsplash.it/1200/1200?image=173'
+              src="https://unsplash.it/1200/1200?image=173"
               width={1200}
               height={1200}
             />
             <figcaption>View Project</figcaption>
           </figure>
         </a>
-        <a
+        {/* <a
           className={myWorkPageStyles.galleryLink}
           href='https://unsplash.it/1200/1000?image=943'
         >
