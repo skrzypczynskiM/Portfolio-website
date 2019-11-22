@@ -230,9 +230,11 @@ html:not(.touch) .gallery-image {
   // position: relative;
   // width: 100%;
 
+  // max-width: 300px;
   max-width: 1200px;
-  margin: 30px auto;
-  padding: 0 20px;
+
+  // margin: 30px 10%;
+  // padding: 0 20px;
   width: 100%;
   display: grid;
   /* Define Auto Row size */
@@ -240,11 +242,30 @@ html:not(.touch) .gallery-image {
   /*Define our columns */
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   grid-gap: 1em;
+  padding-bottom: 50px;
+  // margin: 0 auto;
 
-  & > a {
-    flex: 49%;
+  @media screen and (min-width: 360px) {
+    padding: 0px 4% 100px;
   }
-  @media screen and (min-width: 720px) {
+
+  @media screen and (min-width: 480px) {
+    padding: 0 15% 100px;
+  }
+
+  @media screen and (min-width: 770px) {
+    padding: 0 3% 100px;
+  }
+
+  @media screen and (min-width: 949px) {
+    padding: 0 3% 100px;
+    margin: 0 30px;
+  }
+  & > a {
+    flex: 0 1 49%;
+  }
+  @media screen and (min-width: 520px) {
+    // max-width: 1200px;
   }
 
   @media (min-width: 1200px) {
