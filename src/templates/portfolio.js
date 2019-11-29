@@ -13,6 +13,18 @@ export const query = graphql`
       frontmatter {
         title
         description
+        img1 {
+          base
+        }
+        img2 {
+          base
+        }
+        img3 {
+          base
+        }
+        img4 {
+          base
+        }
       }
       html
     }
@@ -41,12 +53,20 @@ const Portfolio = props => {
           </button> */}
 
           <div className={projectStyles.slider}>
-            <Slider></Slider>
+            <Slider
+              pictures={{
+                img1: props.data.markdownRemark.frontmatter.img1.base,
+                img2: props.data.markdownRemark.frontmatter.img2.base,
+                img3: props.data.markdownRemark.frontmatter.img3.base,
+                img4: props.data.markdownRemark.frontmatter.img4.base,
+              }}
+            />
           </div>
           <div className={projectStyles.button}>
             <br />
             <a
-              href="https://yourpalnurav.blogspot.com/"
+              // href="https://yourpalnurav.blogspot.com/"
+              href=""
               className={projectStyles.brkBtn}
             >
               Visit Page

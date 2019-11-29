@@ -220,3 +220,13 @@
   //   width: 0.5%;
   //   display: inline-block;
 }
+
+.EXAMPLE {
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("./projects/Portfolio/me.png");
+}

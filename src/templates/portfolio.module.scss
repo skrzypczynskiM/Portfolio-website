@@ -66,9 +66,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 50%;
+  // margin: 0 auto;
   // height: 100px;
   position: relative;
+  border: 1px solid #2620205e;
+  margin: 0 0 0 20%;
+
+  @media screen and (min-width: 720px) {
+    margin-left: 5%;
+  }
 }
 
 .technicalSection {
@@ -242,15 +249,17 @@
 
   @media screen and (min-width: 400px) {
     font-size: 1.3rem;
-    margin: 0 15% 0 0;
+    margin: 35px 15% 0 0;
   }
 
   @media screen and (min-width: 545px) {
     font-size: 1.4rem;
-    margin: 0 21% 0 0;
+    margin: 15px 21% 0 0;
   }
   @media screen and (min-width: 720px) {
     font-size: 1.5rem;
+    margin: 70px 32% 0 0;
+    display: block;
   }
 }
 

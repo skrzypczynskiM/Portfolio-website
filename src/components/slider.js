@@ -1,9 +1,39 @@
 import React from "react"
 import { Carousel } from "react-responsive-carousel"
 
-export default () => (
-  <Carousel>
-    <div>
+export default ({ pictures }) => {
+  console.log(pictures)
+  return (
+    <Carousel dynamicHeight={true} emulateTouch={true} useKeyboardArrows={true}>
+      <div>
+        <img
+          src={require(`./projects/Portfolio/${pictures.img1}`)}
+          alt="TEXT"
+        />
+        {/* <p className="legend">Legend 1</p> */}
+      </div>
+      <div>
+        <img
+          src={require(`./projects/Portfolio/${pictures.img2}`)}
+          alt="TEXT"
+        />
+        {/* <p className="legend">Legend 2</p> */}
+      </div>
+      <div>
+        <img
+          src={require(`./projects/Portfolio/${pictures.img3}`)}
+          alt="TEXT"
+        />
+        {/* <p className="legend">Legend 3</p> */}
+      </div>
+      <div>
+        <img
+          src={require(`./projects/Portfolio/${pictures.img4}`)}
+          alt="TEXT"
+        />
+        {/* <p className="legend">Legend 4</p> */}
+      </div>
+      {/* <div>
       <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" />
       <p className="legend">Legend 1</p>
     </div>
@@ -18,6 +48,7 @@ export default () => (
     <div>
       <img src="http://lorempixel.com/output/cats-q-c-640-480-4.jpg" />
       <p className="legend">Legend 4</p>
-    </div>
-  </Carousel>
-)
+    </div> */}
+    </Carousel>
+  )
+}
