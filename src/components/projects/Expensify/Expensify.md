@@ -1,6 +1,10 @@
 ---
 title: "Expensify"
 description: "Expenses management application"
+img1: "home1.png"
+img2: "me.png"
+img3: "skills.png"
+img4: "contact.png"
 ---
 
 #### Features

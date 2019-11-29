@@ -1,6 +1,10 @@
 ---
 title: "Smoll Fish"
 description: "Fresh Market Shop"
+img1: "home1.png"
+img2: "me.png"
+img3: "skills.png"
+img4: "contact.png"
 ---
 
 #### Features
@@ -23,4 +27,4 @@ Code technologies I got involved with while working on this project.
 2. CSS3 preprocessed with Stylus
 3. JavaScript
 4. React
-6. Firebase (authentification and data storage)
+5. Firebase (authentification and data storage)
