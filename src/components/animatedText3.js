@@ -18,7 +18,7 @@ const homeNav = () => {
 
         <li>
           Check out my current
-          <Link to="/my-work/" className={homeStyle.link}>
+          <Link to="/skills/" className={homeStyle.link}>
             <span className={`${homeStyle.hover} ${homeStyle.hover_2}`}>
               {" "}
               list of skills.
@@ -28,7 +28,7 @@ const homeNav = () => {
 
         <li>
           Feel free to take a look at my latest projects <br />
-          <Link to="/my-work/" className={homeStyle.link}>
+          <Link to="/portfolio/" className={homeStyle.link}>
             <span className={`${homeStyle.hover} ${homeStyle.hover_2}`}>
               {" "}
               on the web portfolio page.

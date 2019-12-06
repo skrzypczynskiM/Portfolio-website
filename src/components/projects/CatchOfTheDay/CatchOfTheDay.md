@@ -1,10 +1,11 @@
 ---
-title: "Smoll Fish"
+title: "CatchOfTheDay"
 description: "Fresh Market Shop"
-img1: "home1.png"
-img2: "me.png"
-img3: "skills.png"
-img4: "contact.png"
+img1: "visitStore.png"
+img2: "login.png"
+img3: "dashboard.png"
+img4: "ordered.png"
+link: "https://friendly-pike-2da139.netlify.com/"
 ---
 
 #### Features
@@ -24,7 +25,7 @@ Code technologies I got involved with while working on this project.
 ---
 
 1. HTML5
-2. CSS3 preprocessed with Stylus
+2. CSS3
 3. JavaScript
 4. React
 5. Firebase (authentification and data storage)

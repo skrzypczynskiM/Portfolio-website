@@ -1,10 +1,11 @@
 ---
 title: "Expensify"
 description: "Expenses management application"
-img1: "home1.png"
-img2: "me.png"
-img3: "skills.png"
-img4: "contact.png"
+img1: "login2.png"
+img2: "dashboard_with_data.png"
+img3: "add.png"
+img4: "edit.png"
+link: "https://react-expensify-2-just-flow555.herokuapp.com/"
 ---
 
 #### Features
@@ -30,3 +31,4 @@ Code technologies I got involved with while working on this project.
 6. Firebase (authentification and data storage)
 7. Jest
 8. Enzyme
+9. Heroku

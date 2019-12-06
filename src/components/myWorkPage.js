@@ -44,7 +44,9 @@ const MyWorkPage = () => {
               width={500}
               height={500}
             /> */}
-              <div className={myWorkPageStyles.img}></div>
+              <div
+                className={`${myWorkPageStyles.img} ${myWorkPageStyles.portfolio}`}
+              ></div>
               <figcaption>View Project</figcaption>
             </figure>
           </Link>
@@ -55,11 +57,9 @@ const MyWorkPage = () => {
             className={myWorkPageStyles.galleryLink}
           >
             <figure className={myWorkPageStyles.galleryImage}>
-              <img
-                src="https://unsplash.it/1200/1400?image=1081"
-                // width={1200}
-                // height={1400}
-              />
+              <div
+                className={`${myWorkPageStyles.img} ${myWorkPageStyles.expensify}`}
+              ></div>
               <figcaption>View Project</figcaption>
             </figure>
           </Link>
@@ -78,15 +78,13 @@ const MyWorkPage = () => {
         </a> */}
           <Link
             // to={`/portfolio/${data.allFile.edges.node.fields.slug}`}
-            to={`/portfolio/SmollFish`}
+            to={`/portfolio/CatchOfTheDay`}
             className={myWorkPageStyles.galleryLink}
           >
             <figure className={myWorkPageStyles.galleryImage}>
-              <img
-                src="https://unsplash.it/1600/1600?image=267"
-                // width={1600}
-                // height={1600}
-              />
+              <div
+                className={`${myWorkPageStyles.img} ${myWorkPageStyles.catchOfTheDay}`}
+              ></div>
               <figcaption>View Project</figcaption>
             </figure>
           </Link>

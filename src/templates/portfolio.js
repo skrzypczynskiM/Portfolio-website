@@ -1,5 +1,5 @@
-import React from "react"
-import { graphql } from "gatsby"
+import React, { useRef, useState } from "react"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/layout"
 import projectStyles from "./portfolio.module.scss"
@@ -13,21 +13,78 @@ export const query = graphql`
       frontmatter {
         title
         description
-        img1
-        img2
-        img3
-        img4 
+        img1  {
+          base
+        }
+        img2 {
+          base
+        }
+        img3 {
+          base
+        }
+        img4 {
+          base
+        }
+        link
       }
       html
     }
   }
+  # for production - comment out lines above and uncomment those below
+  #   query($slug: String!) {
+  #     markdownRemark(fields: { slug: { eq: $slug } }) {
+  #       frontmatter {
+  #         title
+  #         description
+  #         img1
+  #         img2
+  #         img3
+  #         img4
+  #       }
+  #       html
+  #     }
+  #   }
+  #
 `
 
 const Portfolio = props => {
+  // const arrow = useRef(null)
+  const [isHovered, setIsHovered] = useState(false)
+
+  const displayText = e => {
+    // if (isHovered) return
+    setIsHovered(true)
+  }
+
+  const hideText = e => {
+    if (!isHovered) return
+    setIsHovered(false)
+  }
+
   return (
     <Layout>
       <div className={projectStyles.projectPage}>
         <div className={projectStyles.container}>
+          <Link to="/portfolio/">
+            <div
+              className={projectStyles.goBack}
+              onMouseEnter={displayText}
+              onMouseLeave={hideText}
+            >
+              {isHovered && <span>Back to projects</span>}
+              <div
+                className={`${projectStyles.paginate} ${projectStyles.right}`}
+                // ref={arrow}
+                // onHover={setIsHovered(true)}
+                // onMouseEnter={displayText}
+                // onMouseLeave={hideText}
+                // onMouseOut={setIsHovered(false)}
+              >
+                <i></i>
+                <i></i>
+              </div>
+            </div>
+          </Link>
           <h1 className={projectStyles.title}>
             {props.data.markdownRemark.frontmatter.title}
           </h1>
@@ -46,19 +103,27 @@ const Portfolio = props => {
 
           <div className={projectStyles.slider}>
             <Slider
+              projectName={props.data.markdownRemark.frontmatter.title}
               pictures={{
-                img1: props.data.markdownRemark.frontmatter.img1,
-                img2: props.data.markdownRemark.frontmatter.img2,
-                img3: props.data.markdownRemark.frontmatter.img3,
-                img4: props.data.markdownRemark.frontmatter.img4,
+                img1: props.data.markdownRemark.frontmatter.img1.base,
+                img2: props.data.markdownRemark.frontmatter.img2.base,
+                img3: props.data.markdownRemark.frontmatter.img3.base,
+                img4: props.data.markdownRemark.frontmatter.img4.base,
+
+                // for production - comment out lines above and uncomment those below
+                // img1: props.data.markdownRemark.frontmatter.img1,
+                // img2: props.data.markdownRemark.frontmatter.img2,
+                // img3: props.data.markdownRemark.frontmatter.img3,
+                // img4: props.data.markdownRemark.frontmatter.img4,
               }}
             />
           </div>
           <div className={projectStyles.button}>
             <br />
             <a
-              // href="https://yourpalnurav.blogspot.com/"
-              href=""
+              target="_blank"
+              rel="noopener noreferrer"
+              href={props.data.markdownRemark.frontmatter.link}
               className={projectStyles.brkBtn}
             >
               Visit Page

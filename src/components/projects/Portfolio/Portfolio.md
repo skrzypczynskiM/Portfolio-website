@@ -5,6 +5,7 @@ img1: "home1.png"
 img2: "me.png"
 img3: "skills.png"
 img4: "contact.png"
+link: "https://nervous-benz-0f9717.netlify.com/home"
 ---
 
 #### Technical Sheet
@@ -18,3 +19,4 @@ Code technologies I got involved with while working on this project.
 3. JavaScript
 4. React
 5. Gatsby
+6. Netlify

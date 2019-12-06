@@ -1,34 +1,40 @@
 import React from "react"
 import { Carousel } from "react-responsive-carousel"
 
-export default ({ pictures }) => {
+export default ({ projectName, pictures }) => {
   console.log(pictures)
   return (
-    <Carousel dynamicHeight={true} emulateTouch={true} useKeyboardArrows={true}>
+    <Carousel
+      dynamicHeight={true}
+      emulateTouch={true}
+      useKeyboardArrows={true}
+      showIndicators={false}
+      showStatus={false}
+    >
       <div>
         <img
-          src={require(`./projects/Portfolio/${pictures.img1}`)}
+          src={require(`./projects/${projectName}/${pictures.img1}`)}
           alt="TEXT"
         />
         {/* <p className="legend">Legend 1</p> */}
       </div>
       <div>
         <img
-          src={require(`./projects/Portfolio/${pictures.img2}`)}
+          src={require(`./projects/${projectName}/${pictures.img2}`)}
           alt="TEXT"
         />
         {/* <p className="legend">Legend 2</p> */}
       </div>
       <div>
         <img
-          src={require(`./projects/Portfolio/${pictures.img3}`)}
+          src={require(`./projects/${projectName}/${pictures.img3}`)}
           alt="TEXT"
         />
         {/* <p className="legend">Legend 3</p> */}
       </div>
       <div>
         <img
-          src={require(`./projects/Portfolio/${pictures.img4}`)}
+          src={require(`./projects/${projectName}/${pictures.img4}`)}
           alt="TEXT"
         />
         {/* <p className="legend">Legend 4</p> */}

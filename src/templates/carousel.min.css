@@ -115,12 +115,12 @@
 }
 
 .carousel .thumb:focus {
-  border: 3px solid #ccc;
+  /* border: 3px solid #ccc; */
   outline: 0;
 }
 .carousel .thumb.selected,
 .carousel .thumb:hover {
-  border: 3px solid #fff;
+  border: 3px solid #cb70f8;
 }
 .carousel .thumb img {
   vertical-align: top;
@@ -154,7 +154,8 @@
 }
 .carousel.carousel-slider .control-arrow:hover {
   /* background: rgba(0, 0, 0, 0.2); */
-  background: #303030;
+  /* background: #303030; */
+  background: rgba(176, 176, 176, 0.1);
 }
 
 /* @media screen and (min-width: 220px) {
