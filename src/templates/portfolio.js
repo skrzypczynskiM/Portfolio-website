@@ -8,47 +8,47 @@ import Slider from "../components/slider"
 import "./carousel.min.css"
 
 export const query = graphql`
-  # query($slug: String!) {
-  #   markdownRemark(fields: { slug: { eq: $slug } }) {
-  #     frontmatter {
-  #       title
-  #       description
-  #       img1 {
-  #         base
-  #       }
-  #       img2 {
-  #         base
-  #       }
-  #       img3 {
-  #         base
-  #       }
-  #       img4 {
-  #         base
-  #       }
-  #       img5 {
-  #         base
-  #       }
-
-  #       link
-  #     }
-  #     html
-  #   }
-  # }
-  # for production - comment out lines above and uncomment those below
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
         description
-        img1
-        img2
-        img3
-        img4
-        img5
+        img1 {
+          base
+        }
+        img2 {
+          base
+        }
+        img3 {
+          base
+        }
+        img4 {
+          base
+        }
+        img5 {
+          base
+        }
+
+        link
       }
       html
     }
   }
+  # for production - comment out lines above and uncomment those below
+  # query($slug: String!) {
+  #   markdownRemark(fields: { slug: { eq: $slug } }) {
+  #     frontmatter {
+  #       title
+  #       description
+  #       img1
+  #       img2
+  #       img3
+  #       img4
+  #       img5
+  #     }
+  #     html
+  #   }
+  # }
 `
 
 const Portfolio = props => {
