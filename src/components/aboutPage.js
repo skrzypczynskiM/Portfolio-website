@@ -13,23 +13,6 @@ const AboutPage = () => {
   return (
     <div className={aboutStyles.aboutPage}>
       <div className={aboutStyles.aboutMe}>
-        {/*  QUOOOOOOTE */}
-        {/* <div className={aboutStyles.blockquoteWrapper}>
-          <div className={aboutStyles.blockquote}>
-            <h1>
-              Success consists of{" "}
-              <span className={aboutStyles.style}>
-                going from failure to failure without loss of{" "}
-              </span>
-              enthusiasm.
-            </h1>
-            <h4 className={aboutStyles.style}>
-              {" "}
-              <br /> Winston Churchill
-            </h4>
-          </div>
-        </div> */}
-        {/*  */}
         <div className={aboutStyles.quoteWrapper}>
           <blockquote>
             <h4 className={aboutStyles.purple}>
@@ -42,13 +25,7 @@ const AboutPage = () => {
           </blockquote>{" "}
           <cite>Winston Churchill</cite>
         </div>
-        {/*  */}
-        {/* NED OF QUOOOOOOTE */}
-        {/* <button className={aboutStyles.button1}>
-          Fancy Button
-          <div className={aboutStyles.horizontal}></div>
-          <div className={aboutStyles.vertical}></div>
-        </button> */}
+
         <div className={aboutStyles.meInfo}>
           <div className={aboutStyles.button1}>
             <h1>About me</h1>

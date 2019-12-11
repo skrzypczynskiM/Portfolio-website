@@ -114,7 +114,6 @@ const Portfolio = props => {
                 img3: props.data.markdownRemark.frontmatter.img3.base,
                 img4: props.data.markdownRemark.frontmatter.img4.base,
                 img5: props.data.markdownRemark.frontmatter.img5.base,
-
                 // for production - comment out lines above and uncomment those below
                 // img1: props.data.markdownRemark.frontmatter.img1,
                 // img2: props.data.markdownRemark.frontmatter.img2,

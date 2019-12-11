@@ -44,8 +44,15 @@
 }
 .carousel {
   position: relative;
-  width: 100%;
+  width: 80% !important;
 }
+
+@media Screen and (min-width: 400px) {
+  .carousel {
+    width: 100%;
+  }
+}
+
 .carousel * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -128,21 +135,21 @@
   vertical-align: top;
 }
 
-/* @media screen and (min-width: 240px) {
+@media screen and (min-width: 240px) {
   .carousel.carousel-slider {
     position: relative;
     margin: 0;
     overflow: hidden;
-    width: 70% !important;
-    margin: 0 73px;
+    width: 80% !important;
+    /* margin: 0 73px; */
   }
-} */
+}
 /* @media screen and (min-width: 481px) { */
 .carousel.carousel-slider {
   position: relative;
   margin: 0;
   overflow: hidden;
-  /* width: 100% !important; */
+  width: 80%;
 }
 /* } */
 
