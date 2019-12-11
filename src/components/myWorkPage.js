@@ -88,35 +88,10 @@ const MyWorkPage = () => {
               <figcaption>View Project</figcaption>
             </figure>
           </Link>
-          {/* <a
-          className={myWorkPageStyles.galleryLink}
-          href="https://unsplash.it/1200/1600?image=266"
-        >
-          <figure className={myWorkPageStyles.galleryImage}>
-            <img
-              src="https://unsplash.it/1200/1600?image=266"
-              width={1200}
-              height={1600}
-            />
-            <figcaption>View Project</figcaption>
-          </figure>
-        </a> */}
-          {/* <a
-          className={myWorkPageStyles.galleryLink}
-          href='https://unsplash.it/1600/1200?image=634'
-        >
-          <figure className={myWorkPageStyles.galleryImage}>
-            <img
-              src='https://unsplash.it/1600/1200?image=634'
-              width={1600}
-              height={1200}
-            />
-            <figcaption>View Project</figcaption>
-          </figure>
-        </a> */}
-          <a
+
+          <Link
             className={myWorkPageStyles.galleryLink}
-            href="https://unsplash.it/1600/1600?image=923"
+            to={`/portfolio/placeholderForMyAwesomeProject`}
           >
             <figure className={myWorkPageStyles.galleryImage}>
               <img
@@ -126,46 +101,7 @@ const MyWorkPage = () => {
               />
               <figcaption>View Project</figcaption>
             </figure>
-          </a>
-          {/* <a
-          className={myWorkPageStyles.galleryLink}
-          href='https://unsplash.it/1600/1400?image=682'
-        >
-          <figure className={myWorkPageStyles.galleryImage}>
-            <img
-              src='https://unsplash.it/1600/1400?image=682'
-              width={1600}
-              height={1400}
-            />
-            <figcaption>View Project</figcaption>
-          </figure>
-        </a> */}
-          <a
-            className={myWorkPageStyles.galleryLink}
-            href="https://unsplash.it/1200/1200?image=173"
-          >
-            <figure className={myWorkPageStyles.galleryImage}>
-              <img
-                src="https://unsplash.it/1200/1200?image=173"
-                width={1200}
-                height={1200}
-              />
-              <figcaption>View Project</figcaption>
-            </figure>
-          </a>
-          {/* <a
-          className={myWorkPageStyles.galleryLink}
-          href='https://unsplash.it/1200/1000?image=943'
-        >
-          <figure className={myWorkPageStyles.galleryImage}>
-            <img
-              src='https://unsplash.it/1200/1000?image=943'
-              width={1200}
-              height={1000}
-            />
-            <figcaption>View Project</figcaption>
-          </figure>{" "}
-        </a> */}
+          </Link>
         </article>
       </div>
     </div>

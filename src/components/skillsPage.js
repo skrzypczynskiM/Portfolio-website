@@ -31,7 +31,7 @@ const SkillsPage = () => {
               life in the browser.
             </p>
             <h4>Languages I speak:</h4>
-            <p>Java Script, HTML, CSS, Sass, Less, Stylus</p>
+            <p>HTML, CSS, JavaScript, Sass, Less, Stylus</p>
             <h4>Dev tools:</h4>
             <p>
               React, Redux, Jest, Enzyme, Bootstrap , Gatsby, GitHub, GraphQL,

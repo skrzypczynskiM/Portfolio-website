@@ -3,8 +3,9 @@ title: "Expensify"
 description: "Expenses management application"
 img1: "login2.png"
 img2: "dashboard_with_data.png"
-img3: "add.png"
-img4: "edit.png"
+img3: "calendar.png"
+img4: "add.png"
+img5: "edit.png"
 link: "https://react-expensify-2-just-flow555.herokuapp.com/"
 ---
 

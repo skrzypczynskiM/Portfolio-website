@@ -4,7 +4,9 @@ description: "Fresh Market Shop"
 img1: "visitStore.png"
 img2: "login.png"
 img3: "dashboard.png"
-img4: "ordered.png"
+img4: "customer.png"
+img5: "ordered.png"
+
 link: "https://friendly-pike-2da139.netlify.com/"
 ---
 

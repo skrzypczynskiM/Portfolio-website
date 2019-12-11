@@ -1,66 +1,18 @@
-// .quote {
-//   -webkit-transition: all 900ms cubic-bezier(0.165, 0.84, 0.44, 1);
-//   -moz-transition: all 900ms cubic-bezier(0.165, 0.84, 0.44, 1);
-//   transition: all 900ms cubic-bezier(0.165, 0.84, 0.44, 1);
-//   position: absolute;
-//   left: 50%;
-//   top: 50%;
-//   margin-left: -275px;
-//   margin-top: -120px;
-//   opacity: 0;
-// }
-
-// .line {
-//   -webkit-transition: width 900ms cubic-bezier(0.165, 0.84, 0.44, 1);
-//   -moz-transition: width 900ms cubic-bezier(0.165, 0.84, 0.44, 1);
-//   transition: width 900ms cubic-bezier(0.165, 0.84, 0.44, 1);
-//   width: 0px;
-//   height: 1px;
-//   background: #fff;
-//   margin: auto;
-//   margin-bottom: 12px;
-//   margin-top: 18px;
-// }
-
-// .quote.active {
-//   -webkit-transform: translateY(-30px);
-//   -moz-transform: translateY(-30px);
-//   transform: translateY(-30px);
-//   opacity: 1;
-// }
-
-// .quote.active .line {
-//   width: 100px;
-// }
-
 .aboutPage {
-  //   display: flex;
-  //   flex-direction: row;
-  //   flex-direction: column;
   min-width: 100%;
   min-height: 100%;
-  //   min-height: inherit
-
   position: relative;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  // overflow-y: scroll;
 }
 
 .aboutMe {
   display: flex;
   flex-direction: column;
-  //   margin: 14% 10%;
-  //   border: 1px solid white;
-
-  //   height: 80%;
-  //   width: 35%;
-
   & > * {
     display: block;
-    // margin: 0 auto;
   }
 
   & h1 {
@@ -70,109 +22,13 @@
   }
 }
 
-// .blockquoteWrapper {
-//   //   display: flex;
-//   //   height: 100vh;
-//   padding: 0 20px;
-//   //   position: absolute;
-//   //   top: 0;
-//   //   right: 0;
-//   width: 75%;
-//   // margin: 0 20px 0 auto;
-//   margin: 0 auto;
-//   align-self: flex-start;
-
-//   @media screen and (min-width: 720px) {
-//     margin: 0 20px 0 auto;
-//     align-self: flex-end;
-//     width: 45%;
-//   }
-// }
-
-/* Blockquote main style */
-// .blockquote {
-//   position: relative;
-//   font-family: "Barlow Condensed", sans-serif;
-//   //   max-width: 520px;
-//   margin: 80px auto;
-//   //   align-self: center;
-// }
-
-// /* Blockquote header */
-// .blockquote h1 {
-//   font-family: "Abril Fatface", cursive;
-//   position: relative; /* for pseudos */
-//   color: #cb70f8;
-//   font-size: 2.8rem;
-//   font-weight: normal;
-//   line-height: 1;
-//   margin: 0;
-//   //   border: 2px solid #fff;
-//   border: solid 2px #bf47fc;
-//   border-radius: 20px;
-//   padding: 25px;
-// }
-
-// /* Blockquote right double quotes */
-// .blockquote h1:after {
-//   content: "";
-//   position: absolute;
-//   border: 2px solid #bf47fc;
-//   border-radius: 0 50px 0 0;
-//   width: 60px;
-//   height: 60px;
-//   bottom: -62px;
-//   left: 50px;
-//   border-bottom: none;
-//   border-left: none;
-//   z-index: 3;
-// }
-
-// .blockquote h1:before {
-//   content: "";
-//   position: absolute;
-//   width: 80px;
-//   border: 6px solid #303030;
-//   bottom: -3px;
-//   left: 50px;
-//   z-index: 2;
-// }
-
-// /* increase header size after 600px */
-// @media all and (min-width: 600px) {
-//   .blockquote h1 {
-//     font-size: 3rem;
-//     line-height: 1.2;
-//   }
-// }
-
-// /* Blockquote subheader */
-// .blockquote h4 {
-//   position: relative;
-//   color: #ffffff;
-//   font-size: 1.6rem;
-//   font-weight: 400;
-//   line-height: 1.2;
-//   margin: 0;
-//   padding-top: 15px;
-//   z-index: 1;
-//   margin-left: 150px;
-//   padding-left: 12px;
-// }
-
-// .blockquote h4:first-letter {
-//   margin-left: -12px;
-// }
-
 .gray {
   color: #bdbdbd;
 }
 
 .meInfo {
   width: 80%;
-  // margin: 50px auto 0;
   position: relative;
-  // margin-bottom: 80px;
   padding-bottom: 120px;
   display: flex;
   justify-content: center;
@@ -195,12 +51,10 @@
 
 .theBeginnings {
   color: #bdbdbd;
-  //   font-size: 1.65rem;
   font-size: 1.5rem;
 
   line-height: 1.2;
   padding: 15px;
-  // border: 1px solid white;
 
   @media screen and (min-width: 720px) {
     font-size: 1.6rem;
@@ -237,13 +91,8 @@
   color: white;
 
   border-radius: 0;
-  // box-shadow: inset 0 0 0 var(--border-size) currentcolor; // usun na desktop
   transition: background 0.8s ease;
-  // position: absolute;
   right: 20px;
-  // display: flex;
-  // justify-content: center;
-  // flex-direction: column;
 
   & h1 {
     margin-top: 20px;
@@ -318,20 +167,10 @@
   font-family: "Special Elite", cursive;
   display: flex;
   flex-direction: column;
-  //   height: 100vh;
   padding: 0 20px;
-  //   position: absolute;
-  //   top: 0;
-  //   right: 0;
   width: 75%;
-  // margin: 0 20px 0 auto;
   margin: 45px auto 0;
-  // margin: 50px 10% 0 15%;
-
   align-self: flex-start;
-
-  // font-size: 2rem;
-
   @media screen and (min-width: 720px) {
     margin: 80px 20px 0 auto;
     align-self: flex-end;
@@ -352,7 +191,7 @@ blockquote {
   padding: 0 20px;
   width: 100%;
   align-self: flex-start;
-  font-size: 1.8rem;
+  font-size: 2rem;
 
   @media screen and (min-width: 720px) {
     font-size: 2.8rem;
@@ -363,11 +202,9 @@ blockquote {
   }
 
   & > .purple {
-    // font-size: 2rem;
     color: #cb70f8;
 
     @media screen and (min-width: 720px) {
-      // font-size: 2rem;
     }
   }
 }
@@ -403,17 +240,11 @@ blockquote:after {
   content: "”";
   right: -2rem;
   bottom: 0;
-
-  @media screen and (min-width: 720px) {
-    // left: -5rem;
-    // top: -2rem;
-  }
 }
 
 cite {
   line-height: 3;
   text-align: center;
-  // position: absolute;
   color: white;
   top: 130px;
   font-size: 1.3rem;

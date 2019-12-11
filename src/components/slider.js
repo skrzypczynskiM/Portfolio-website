@@ -39,6 +39,19 @@ export default ({ projectName, pictures }) => {
         />
         {/* <p className="legend">Legend 4</p> */}
       </div>
+
+      <div>
+        {/* {!!pictures.img5 && ( */}
+        <img
+          src={require(`./projects/${projectName}/${pictures.img5}`)}
+          alt="TEXT"
+        />
+        {/* )} */}
+        {/* <img
+          src={require(`./projects/${projectName}/${pictures.img5}`)}
+          alt="TEXT"
+        /> */}
+      </div>
       {/* <div>
       <img src="http://lorempixel.com/output/cats-q-c-640-480-1.jpg" />
       <p className="legend">Legend 1</p>

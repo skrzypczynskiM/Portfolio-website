@@ -1,29 +1,6 @@
 import React, { useRef, useState, useEffect } from "react"
 import contactStyles from "./contactForm.module.scss"
-// import "./transitionStyles.css"
 
-//import useForm from "./useForm"
-// import FollowMe from "./followMe"
-//import Particles from "react-particles-js"
-
-// const particleOpt = {
-//   particles: {
-//     number: {
-//       value: 2500,
-//       density: {
-//         enable: true,
-//         value_area: 30000,
-//       },
-//     },
-//     line_linked: {
-//       shadow: {
-//         enable: true,
-//         color: "#3CA9D1",
-//         blur: 8,
-//       },
-//     },
-//   },
-// }
 const ContactForm = () => {
   const name = useRef(null)
   const email = useRef(null)
@@ -90,13 +67,8 @@ const ContactForm = () => {
     }
   }, [errors])
 
-  // const myErrors = Object.keys(errors).map(errorInfo => {
-  //   return <p className={contactStyles.errorText}>{errors[errorInfo]}</p>
-  // })
-
   return (
     <div className={contactStyles.contactPage}>
-      {/* <Particles params={particleOpt} /> */}
       <div className={contactStyles.vertically}>
         <div className={contactStyles.myCont}>
           <h1>Get in touch</h1>
@@ -104,8 +76,6 @@ const ContactForm = () => {
             If you wanna get in touch, talk to me about a project collaboration
             or just say hi, fill up the awesome form below.
           </p>
-
-          {/* <div className={contactStyles.container}> */}
           <div className={contactStyles.form}>
             <form
               name="contact"
@@ -114,8 +84,7 @@ const ContactForm = () => {
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
               noValidate
-              // autocomplete="off"
-              // autocomplete="new-password"
+              autoComplete="off"
             >
               <ul className={contactStyles.box}>
                 <li>
@@ -137,7 +106,7 @@ const ContactForm = () => {
                         <span>
                           <span>
                             <input
-                              // type="text"
+                              type="search"
                               name="name"
                               placeholder="Name"
                               id="name"
@@ -146,7 +115,7 @@ const ContactForm = () => {
                               onBlur={handleFocus}
                               onChange={handleChange}
                               autoComplete="off"
-                            />
+                            ></input>
                           </span>
                         </span>
                       </span>
@@ -160,21 +129,15 @@ const ContactForm = () => {
                       ref={email}
                     />
 
-                    {/* <div className={contactStyles.btn}> */}
                     <div
                       className={`${contactStyles.btn} ${errors.email &&
                         contactStyles.errorBorder}`}
                     >
-                      {/* {errors.email && (
-                        <p className={contactStyles.errorText}>
-                          {errors.email}
-                        </p>
-                      )} */}
                       <span>
                         <span>
                           <span>
                             <input
-                              type="email"
+                              type="search"
                               name="email"
                               placeholder="Email"
                               id="email"
@@ -183,7 +146,7 @@ const ContactForm = () => {
                               onFocus={handleFocus}
                               onBlur={handleFocus}
                               onChange={handleChange}
-                              autoComplete="new-password"
+                              autoComplete="off"
                             />
 
                             {errors.email && (
@@ -239,11 +202,6 @@ const ContactForm = () => {
                     className={`${contactStyles.btn} ${errors.message &&
                       contactStyles.errorBorder}`}
                   >
-                    {/* {errors.message && (
-                      <p className={contactStyles.errorText}>
-                        {errors.message}
-                      </p>
-                    )} */}
                     <span>
                       <span>
                         <span>
@@ -257,11 +215,6 @@ const ContactForm = () => {
                             onBlur={handleFocus}
                             onChange={handleChange}
                           />
-                          {/* {errors.message && (
-                            <p className={contactStyles.errorText}>
-                              {errors.message}
-                            </p>
-                          )} */}
                         </span>
                       </span>
                     </span>
@@ -272,21 +225,15 @@ const ContactForm = () => {
                 </li>
                 <li>
                   <div className={contactStyles.btn}>
-                    {/* <span>
-                      <span>
-                        <span> */}
                     <button type="submit" className={contactStyles.submitBtn}>
                       <span>Send</span>
                     </button>
-                    {/* </span>
-                      </span>
-                    </span> */}
                   </div>
                 </li>
               </ul>
             </form>
           </div>
-          {/* </div> */}
+
           <div className={contactStyles.entrySocial}>
             <div className={contactStyles.forMobile}>
               <h3>Wanna know more about me?</h3>
@@ -298,37 +245,23 @@ const ContactForm = () => {
             <div className={contactStyles.container_other}>
               <div>Follow me</div>
               <div className={contactStyles.github}>
-                <a
-                  href="Your_Github_Page"
-                  target="_blank"
-                  //title="Follow me on GitHub"
-                >
+                <a href="Your_Github_Page" target="_blank">
                   GitHub
                 </a>
               </div>
               <div className={contactStyles.gplus}>
-                <a
-                  href="Your_Googleplus_Follow"
-                  target="_blank"
-                  // title="Send me an email"
-                >
+                <a href="Your_Googleplus_Follow" target="_blank">
                   Google+
                 </a>
               </div>
               <div className={contactStyles.linkedin}>
-                <a
-                  href="Your_Linkedin_Profile"
-                  target="_blank"
-                  // title="Connect on LinkedIn"
-                >
+                <a href="Your_Linkedin_Profile" target="_blank">
                   Linkedin
                 </a>
               </div>
             </div>
           </div>
         </div>
-        {/* <FollowMe /> */}
-        {/* </div> */}
       </div>
     </div>
   )

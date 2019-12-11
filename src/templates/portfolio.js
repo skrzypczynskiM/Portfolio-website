@@ -8,43 +8,47 @@ import Slider from "../components/slider"
 import "./carousel.min.css"
 
 export const query = graphql`
+  # query($slug: String!) {
+  #   markdownRemark(fields: { slug: { eq: $slug } }) {
+  #     frontmatter {
+  #       title
+  #       description
+  #       img1 {
+  #         base
+  #       }
+  #       img2 {
+  #         base
+  #       }
+  #       img3 {
+  #         base
+  #       }
+  #       img4 {
+  #         base
+  #       }
+  #       img5 {
+  #         base
+  #       }
+
+  #       link
+  #     }
+  #     html
+  #   }
+  # }
+  # for production - comment out lines above and uncomment those below
   query($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       frontmatter {
         title
         description
-        img1  {
-          base
-        }
-        img2 {
-          base
-        }
-        img3 {
-          base
-        }
-        img4 {
-          base
-        }
-        link
+        img1
+        img2
+        img3
+        img4
+        img5
       }
       html
     }
   }
-  # for production - comment out lines above and uncomment those below
-  #   query($slug: String!) {
-  #     markdownRemark(fields: { slug: { eq: $slug } }) {
-  #       frontmatter {
-  #         title
-  #         description
-  #         img1
-  #         img2
-  #         img3
-  #         img4
-  #       }
-  #       html
-  #     }
-  #   }
-  #
 `
 
 const Portfolio = props => {
@@ -105,16 +109,18 @@ const Portfolio = props => {
             <Slider
               projectName={props.data.markdownRemark.frontmatter.title}
               pictures={{
-                img1: props.data.markdownRemark.frontmatter.img1.base,
-                img2: props.data.markdownRemark.frontmatter.img2.base,
-                img3: props.data.markdownRemark.frontmatter.img3.base,
-                img4: props.data.markdownRemark.frontmatter.img4.base,
+                // img1: props.data.markdownRemark.frontmatter.img1.base,
+                // img2: props.data.markdownRemark.frontmatter.img2.base,
+                // img3: props.data.markdownRemark.frontmatter.img3.base,
+                // img4: props.data.markdownRemark.frontmatter.img4.base,
+                // img5: props.data.markdownRemark.frontmatter.img5.base,
 
                 // for production - comment out lines above and uncomment those below
-                // img1: props.data.markdownRemark.frontmatter.img1,
-                // img2: props.data.markdownRemark.frontmatter.img2,
-                // img3: props.data.markdownRemark.frontmatter.img3,
-                // img4: props.data.markdownRemark.frontmatter.img4,
+                img1: props.data.markdownRemark.frontmatter.img1,
+                img2: props.data.markdownRemark.frontmatter.img2,
+                img3: props.data.markdownRemark.frontmatter.img3,
+                img4: props.data.markdownRemark.frontmatter.img4,
+                img5: props.data.markdownRemark.frontmatter.img5,
               }}
             />
           </div>

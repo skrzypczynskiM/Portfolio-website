@@ -32,11 +32,6 @@ $big-space: 100px;
     height: $big-cube-size;
   }
 
-  // @media screen and (min-width: 1550px) {
-  //   width: $big-cube-size;
-  //   height: $big-cube-size;
-  // }
-
   & > div {
     position: absolute;
     opacity: 0.8;

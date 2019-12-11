@@ -6,7 +6,6 @@ import navbarStyles from "./navbar.module.scss"
 const NavBar = () => {
   return (
     <nav className={navbarStyles.navList}>
-      {/* <nav className={`${navbarStyles.navList} ${navbarStyles.fixedForDesktop}`}></nav> */}
       <li>
         <Link to="/home/">
           <i className={navbarStyles.michlIcon}></i>
@@ -85,7 +84,6 @@ const NavBar = () => {
           ></i>
         </a>
       </li>
-      {/* </div> */}
     </nav>
   )
 }
