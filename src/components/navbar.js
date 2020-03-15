@@ -78,7 +78,7 @@ const NavBar = () => {
         <a
           className={navbarStyles.navItem}
           href="http://m.me/100004312268311"
-          data-nav-text=""
+          data-nav-text="mess"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -89,7 +89,7 @@ const NavBar = () => {
         <a
           className={navbarStyles.navItem}
           href="https://www.linkedin.com/in/michał-skrzypczyński-7b089b1a4"
-          data-nav-text=""
+          data-nav-text="in"
           target="_blank"
           rel="noopener noreferrer"
         >

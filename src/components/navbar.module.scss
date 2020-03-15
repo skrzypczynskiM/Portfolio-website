@@ -103,6 +103,24 @@ a[data-nav-text] {
   }
 }
 
+a[data-nav-text='my work'] {
+  bottom: -2px;
+
+  @media screen and (min-width: 1200px) {
+    bottom: unset;
+  }
+}
+
+a[data-nav-text='mess'] {
+  bottom: -2px;
+
+  @media screen and (min-width: 1200px) {
+    bottom: unset;
+  }
+}
+
+
+
 .icon {
   position: relative;
   top: 0;

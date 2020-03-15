@@ -238,7 +238,8 @@ const ContactForm = () => {
             <div className={contactStyles.forMobile}>
               <h3>Wanna know more about me?</h3>
               <p className={contactStyles.moreInfo}>
-                Worry not! You can always catch me on Gmail, LinkedIn or GitHub.
+                Worry not! You can always catch me on Messenger, LinkedIn or
+                GitHub.
               </p>
             </div>
 
@@ -251,6 +252,8 @@ const ContactForm = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  {" "}
+                  <i></i>
                   Messanger
                 </a>
               </div>
@@ -261,6 +264,8 @@ const ContactForm = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  {" "}
+                  <i></i>
                   Linkedin
                 </a>
               </div>
@@ -271,6 +276,8 @@ const ContactForm = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
+                  {" "}
+                  <i></i>
                   GitHub
                 </a>
               </div>

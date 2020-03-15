@@ -33,7 +33,8 @@ module.exports = {
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,
         display: `standalone`,
-        icon: `src/images/mech3.png`, // This path is relative to the root of the site.
+        // icon: `src/images/mech3.png`,
+        icon: `src/images/red.svg`, // This path is relative to the root of the site.
       },
     },
     {

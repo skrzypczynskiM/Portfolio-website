@@ -639,25 +639,119 @@ input[type="checkbox"] {
 }
 
 .container_other .github a {
-  padding: 7px 0px 7px 26px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background: #5a32a3 url("../images/myGithub.svg") no-repeat center;
+  padding: 7px 0;
+  position: relative;
+  background: #5a32a3;
+
+  @media screen and (min-width: 470px) {
+    padding: 7px 0 7px 15px;
+
+  }
+
+
+  &>i {
+    background-image: url("../images/githubContact.svg");
+    background-size: contain;
+    width: 55px;
+    height: 55px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 6%;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media screen and (min-width: 470px) {
+      left: 0%;
+      top: 50%;
+      width: 57px;
+      height: 57px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      left: -1%;
+    }
+
+  }
+
 }
 
 .container_other .messanger a {
-  padding: 7px 10px 7px 32px;
-  background: #0078FF url("../images/fbContact.svg") no-repeat center;
-  background-size: contain;
-  background-position: left;
+  position: relative;
+  padding: 7px 0 7px 25px;
+  background: #0078FF;
 
+  @media screen and (min-width: 470px) {
+    padding: 7px 0 7px 30px;
+  }
 
-  @media screen and (max-width: 1085px) {}
+  &>i {
+    background-image: url("../images/fbContact.svg");
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 6%;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media screen and (min-width: 470px) {
+      left: 0%;
+      top: 50%;
+      width: 45px;
+      height: 45px;
+    }
+
+    @media screen and (min-width: 1200px) {
+
+      width: 50px;
+      height: 50px;
+    }
+  }
+
 }
 
+
+
+
 .container_other .linkedin a {
-  padding: 7px 10px 7px 32px;
-  background: #136f9b url("../images/linkedin_1.svg") no-repeat center;
+  padding: 7px 0 7px 10px;
+  background: #136f9b;
+  position: relative;
+
+
+  @media screen and (min-width: 470px) {
+    padding: 7px 0 7px 25px;
+  }
+
+
+  &>i {
+    background-image: url("../images/linkedinContact.svg");
+    background-size: contain;
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 6%;
+
+    top: 50%;
+    transform: translateY(-50%);
+
+    @media screen and (min-width: 470px) {
+      left: 0%;
+      top: 49%;
+      width: 65px;
+      height: 65px
+    }
+
+    @media screen and (min-width: 1200px) {
+      left: -3%;
+    }
+
+  }
+
 
   @media screen and (max-width: 1085px) {
     // padding: 0;
@@ -678,7 +772,7 @@ input[type="checkbox"] {
 
 .container_other .linkedin a:hover {
   @media screen and (max-width: 1200px) {
-    background: #136f9b url("../images/linkedin.svg") no-repeat center;
+    background: #106187;
   }
 }
 
