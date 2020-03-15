@@ -4,22 +4,12 @@ import NavBar from "../components/navbar"
 import "../styles/index.scss"
 import layoutStyles from "./layout.module.scss"
 
-const Layout = (props) => {
+const Layout = props => {
   return (
-    // <div className={layoutStyles.container222}>
-    //   <div className={layoutStyles.container}>
-    //     <NavBar />
-    //     {props.children}
-    //   </div>
-    //   <Footer />
-    // </div>
-    // <div
     <div className={layoutStyles.container}>
       <NavBar />
       {props.children}
       <Footer />
-      {/* <div className={layoutStyles.layoutPage}> */}
-      {/* </div> */}
     </div>
   )
 }

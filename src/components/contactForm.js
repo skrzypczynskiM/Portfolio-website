@@ -244,19 +244,34 @@ const ContactForm = () => {
 
             <div className={contactStyles.container_other}>
               <div>Follow me</div>
-              <div className={contactStyles.github}>
-                <a href="Your_Github_Page" target="_blank">
-                  GitHub
+
+              <div className={contactStyles.messanger}>
+                <a
+                  href="http://m.me/100004312268311"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Messanger
                 </a>
               </div>
-              <div className={contactStyles.gplus}>
-                <a href="Your_Googleplus_Follow" target="_blank">
-                  Google+
-                </a>
-              </div>
+
               <div className={contactStyles.linkedin}>
-                <a href="Your_Linkedin_Profile" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/michał-skrzypczyński-7b089b1a4"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   Linkedin
+                </a>
+              </div>
+
+              <div className={contactStyles.github}>
+                <a
+                  href="https://github.com/justFlow5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  GitHub
                 </a>
               </div>
             </div>

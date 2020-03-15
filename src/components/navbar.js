@@ -66,19 +66,33 @@ const NavBar = () => {
       <li className={`${navbarStyles.firstSocial} ${navbarStyles.showDesktop}`}>
         <a
           className={navbarStyles.navItem}
-          href="https://github.com/justFlow5/gatsby-portfolio"
+          href="https://github.com/justFlow5"
           data-nav-text=""
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <i className={`${navbarStyles.icon} ${navbarStyles.githubIcon}`}></i>
         </a>
       </li>
       <li className={navbarStyles.showDesktop}>
-        <a className={navbarStyles.navItem} href="" data-nav-text="">
-          <i className={`${navbarStyles.icon} ${navbarStyles.googleIcon}`}></i>
+        <a
+          className={navbarStyles.navItem}
+          href="http://m.me/100004312268311"
+          data-nav-text=""
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <i className={`${navbarStyles.icon} ${navbarStyles.fbIcon}`}></i>
         </a>
       </li>
       <li className={navbarStyles.showDesktop}>
-        <a className={navbarStyles.navItem} href="" data-nav-text="">
+        <a
+          className={navbarStyles.navItem}
+          href="https://www.linkedin.com/in/michał-skrzypczyński-7b089b1a4"
+          data-nav-text=""
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <i
             className={`${navbarStyles.icon} ${navbarStyles.linkedInIcon}`}
           ></i>

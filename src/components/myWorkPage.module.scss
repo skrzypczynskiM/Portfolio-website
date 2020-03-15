@@ -331,6 +331,10 @@ html:not(.touch) .gallery-image {
     background-size: 100% 100%;
     background-repeat: no-repeat;
 
+    &.cantry {
+      background-image: url("./projects/Cantry/login.png");
+    }
+
     &.portfolio {
       background-image: url("./projects/Portfolio/home1.png");
     }
