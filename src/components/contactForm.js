@@ -56,7 +56,17 @@ const ContactForm = () => {
   }
 
   const handleSubmit = e => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...values }),
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error))
+
     e.preventDefault()
+
+    // e.preventDefault()
     // setIsSubmitting(true)
     // setErrors(validate(values))
 
@@ -85,13 +95,15 @@ const ContactForm = () => {
           </p>
           <div className={contactStyles.form}>
             <form
-              name="Contact Form"
-              method="POST"
+              name="contact"
+              method="post"
+              action="/success"
               data-netlify="true"
+              data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
               ref={form}
             >
-              <input type="hidden" name="form-name" value="Contact Form" />
+              <input type="hidden" name="form-name" value="contact" />
               <div>
                 <label>Your Email:</label>
                 <input type="email" name="email" onChange={handleChange} />

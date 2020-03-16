@@ -5,7 +5,7 @@ module.exports = {
     author: `Michl`,
   },
   plugins: [
-    "gatsby-plugin-offline",
+    // "gatsby-plugin-offline",
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-nprogress`,
