@@ -57,15 +57,15 @@ const ContactForm = () => {
 
   const handleSubmit = e => {
     e.preventDefault()
-    setIsSubmitting(true)
-    setErrors(validate(values))
-    // console.log("e.currentTarget: ", e.currentTarget)
-    if (Object.keys(errors).length === 0 && isSubmitting) {
-      // e.currentTarget.reset()
-      // form.current.reset()
-      setValues({ name: "", email: "", subject: "", message: "" })
-    }
-    console.log("e.currentTarget: ", form.current)
+    // setIsSubmitting(true)
+    // setErrors(validate(values))
+
+    // if (Object.keys(errors).length === 0 && isSubmitting) {
+    // e.currentTarget.reset()
+    form.current.reset()
+    //   setValues({ name: "", email: "", subject: "", message: "" })
+    // }
+    // console.log("e.currentTarget: ", form.current)
   }
 
   useEffect(() => {
@@ -85,47 +85,29 @@ const ContactForm = () => {
           </p>
           <div className={contactStyles.form}>
             <form
-              method="post"
-              action="#"
+              name="Contact Form"
+              method="POST"
               data-netlify="true"
-              name="contact"
               onSubmit={handleSubmit}
+              ref={form}
             >
-              <input
-                type="hidden"
-                name="form-name"
-                value="contact"
-                onChange={handleChange}
-              />
-              <input
-                type="text"
-                name="name"
-                id="name"
-                required
-                onChange={handleChange}
-              />
-              <input
-                type="text"
-                name="email"
-                id="email"
-                required
-                onChange={handleChange}
-              />
-              <textarea
-                name="message"
-                id="message"
-                rows="4"
-                required
-                onChange={handleChange}
-              />
-              <input type="submit" value="Send Message" />
+              <input type="hidden" name="form-name" value="Contact Form" />
+              <div>
+                <label>Your Email:</label>
+                <input type="email" name="email" onChange={handleChange} />
+              </div>
+              <div>
+                <label>Message:</label>
+                <textarea name="message" />
+              </div>
+              <button type="submit">Send</button>
             </form>
-
-            <form
-              name="myfuckingcontact"
+            {/* <form
+              name="contact"
               action="POST"
               method="POST"
               data-netlify="true"
+              netlify
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
               // noValidate
@@ -133,18 +115,14 @@ const ContactForm = () => {
               ref={form}
             >
               <input type="hidden" name="bot-field" />
-              <input type="hidden" name="form-name" value="myfuckingcontact" />
+              <input type="hidden" name="form-name" value="contact" />
               {/* <input type="hidden" name="form-name" value="Contact Form" /> */}
-              <ul className={contactStyles.box}>
+            {/* <ul className={contactStyles.box}>
                 <li>
                   <input type="hidden" name="bot-field" />
                 </li>
                 <li>
-                  <input
-                    type="hidden"
-                    name="form-name"
-                    value="myfuckingcontact"
-                  />
+                  <input type="hidden" name="form-name" value="contact" />
                 </li>
                 <ul className={contactStyles.container_row}>
                   <li>
@@ -287,7 +265,8 @@ const ContactForm = () => {
                   </div>
                 </li>
               </ul>
-            </form>
+            </form>{" "} */}
+            {/* }  */}
           </div>
 
           <div className={contactStyles.entrySocial}>
