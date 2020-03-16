@@ -85,8 +85,9 @@ const ContactForm = () => {
           </p>
           <div className={contactStyles.form}>
             <form
-              name="contact"
+              name="myfuckingcontact"
               action="POST"
+              method="POST"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
@@ -94,13 +95,19 @@ const ContactForm = () => {
               // autoComplete="off"
               ref={form}
             >
+              <input type="hidden" name="bot-field" />
+              <input type="hidden" name="form-name" value="myfuckingcontact" />
               {/* <input type="hidden" name="form-name" value="Contact Form" /> */}
               <ul className={contactStyles.box}>
                 <li>
                   <input type="hidden" name="bot-field" />
                 </li>
                 <li>
-                  <input type="hidden" name="form-name" value="contact" />
+                  <input
+                    type="hidden"
+                    name="form-name"
+                    value="myfuckingcontact"
+                  />
                 </li>
                 <ul className={contactStyles.container_row}>
                   <li>
