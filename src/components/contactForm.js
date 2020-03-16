@@ -55,19 +55,29 @@ const ContactForm = () => {
     return errors
   }
 
-  const handleSubmit = e => {
+  handleSubmit = e => {
     e.preventDefault()
+    const form = form.current
 
-    // e.preventDefault()
-    // setIsSubmitting(true)
-    // setErrors(validate(values))
-
-    // if (Object.keys(errors).length === 0 && isSubmitting) {
-    // e.currentTarget.reset()
-    // form.current.reset()
-    //   setValues({ name: "", email: "", subject: "", message: "" })
-    // }
-    // console.log("e.currentTarget: ", form.current)
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: this.encode({
+        "form-name": form.getAttribute("name"),
+        ...this.state,
+      }),
+    })
+      .then(response => {
+        console.log("====================================")
+        console.log(`${JSON.stringify(response, null, 2)}`)
+        console.log("====================================")
+        navigate(form.getAttribute("action"))
+      })
+      .catch(error => {
+        console.log("====================================")
+        console.log(`error in submiting the form data:${error}`)
+        console.log("====================================")
+      })
   }
 
   useEffect(() => {
@@ -93,6 +103,7 @@ const ContactForm = () => {
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
+              ref={form}
             >
               <input type="hidden" name="bot-field" />
               <div>
