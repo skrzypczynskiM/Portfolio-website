@@ -55,29 +55,14 @@ const ContactForm = () => {
     return errors
   }
 
-  handleSubmit = e => {
+  const handleSubmit = e => {
     e.preventDefault()
-    const form = form.current
-
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: this.encode({
-        "form-name": form.getAttribute("name"),
-        ...this.state,
-      }),
-    })
-      .then(response => {
-        console.log("====================================")
-        console.log(`${JSON.stringify(response, null, 2)}`)
-        console.log("====================================")
-        navigate(form.getAttribute("action"))
-      })
-      .catch(error => {
-        console.log("====================================")
-        console.log(`error in submiting the form data:${error}`)
-        console.log("====================================")
-      })
+    setIsSubmitting(true)
+    setErrors(validate(values))
+    // console.log("e.currentTarget: ", e.currentTarget)
+    e.currentTarget.reset()
+    form.current.reset()
+    console.log("e.currentTarget: ", form.current)
   }
 
   useEffect(() => {
@@ -98,59 +83,16 @@ const ContactForm = () => {
           <div className={contactStyles.form}>
             <form
               name="contact"
-              method="post"
-              data-netlify="true"
-              data-netlify-honeypot="bot-field"
-              onSubmit={handleSubmit}
-              ref={form}
-            >
-              <input type="hidden" name="bot-field" />
-              <div>
-                <label htmlFor="name">Name</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  onChange={handleChange}
-                />
-              </div>
-              <div>
-                <label htmlFor="email">Email</label>
-                <input
-                  type="text"
-                  name="email"
-                  id="email"
-                  onChange={handleChange}
-                />
-              </div>
-              <div>
-                <label htmlFor="message">Message</label>
-                <textarea
-                  name="message"
-                  id="message"
-                  rows="6"
-                  required
-                  onChange={handleChange}
-                />
-              </div>
-              <button type="submit">Send</button>
-            </form>
-            {/* <form
-              name="contact"
-              action="POST"
               method="POST"
               data-netlify="true"
-              netlify
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
               // noValidate
               // autoComplete="off"
               ref={form}
             >
-              <input type="hidden" name="bot-field" />
-              <input type="hidden" name="form-name" value="contact" />
               {/* <input type="hidden" name="form-name" value="Contact Form" /> */}
-            {/* <ul className={contactStyles.box}>
+              <ul className={contactStyles.box}>
                 <li>
                   <input type="hidden" name="bot-field" />
                 </li>
@@ -164,7 +106,6 @@ const ContactForm = () => {
                       id="btnControl"
                       className={contactStyles.btnControl}
                       ref={name}
-                      name="checkbox0"
                     />
                     <div className={contactStyles.btn}>
                       <span>
@@ -192,7 +133,6 @@ const ContactForm = () => {
                       id="btnControl"
                       className={contactStyles.btnControl}
                       ref={email}
-                      name="checkbox1"
                     />
 
                     <div
@@ -236,7 +176,6 @@ const ContactForm = () => {
                     id="btnControl"
                     className={contactStyles.btnControl}
                     ref={subject}
-                    name="checkbox2"
                   />
                   <div className={contactStyles.btn}>
                     <span>
@@ -264,7 +203,6 @@ const ContactForm = () => {
                     id="btnControl"
                     className={contactStyles.btnControl}
                     ref={message}
-                    name="checkbox3"
                   />
                   <div
                     className={`${contactStyles.btn} ${errors.message &&
@@ -277,6 +215,7 @@ const ContactForm = () => {
                             name="message"
                             id="message"
                             placeholder="Message"
+                            rows="5"
                             value={values.message}
                             onFocus={handleFocus}
                             onBlur={handleFocus}
@@ -298,8 +237,7 @@ const ContactForm = () => {
                   </div>
                 </li>
               </ul>
-            </form>{" "} */}
-            {/* }  */}
+            </form>
           </div>
 
           <div className={contactStyles.entrySocial}>
