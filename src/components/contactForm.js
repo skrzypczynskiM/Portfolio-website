@@ -6,6 +6,7 @@ const ContactForm = () => {
   const email = useRef(null)
   const subject = useRef(null)
   const message = useRef(null)
+  const form = useRef(null)
 
   const refs = { name, email, subject, message }
 
@@ -58,8 +59,13 @@ const ContactForm = () => {
     e.preventDefault()
     setIsSubmitting(true)
     setErrors(validate(values))
-    console.log("e.currentTarget: ", e.currentTarget)
-    e.currentTarget.reset()
+    // console.log("e.currentTarget: ", e.currentTarget)
+    if (Object.keys(errors).length === 0 && isSubmitting) {
+      // e.currentTarget.reset()
+      // form.current.reset()
+      setValues({ name: "", email: "", subject: "", message: "" })
+    }
+    console.log("e.currentTarget: ", form.current)
   }
 
   useEffect(() => {
@@ -79,24 +85,23 @@ const ContactForm = () => {
           </p>
           <div className={contactStyles.form}>
             <form
-              name="Contact Form"
-              netlify
-              method="post"
-              // data-netlify="true"
-              netlify="true"
+              name="contact"
+              action="POST"
+              data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
-              noValidate
-              autoComplete="off"
+              // noValidate
+              // autoComplete="off"
+              ref={form}
             >
-              <input type="hidden" name="form-name" value="Contact Form" />
+              {/* <input type="hidden" name="form-name" value="Contact Form" /> */}
               <ul className={contactStyles.box}>
-                {/* <li>
+                <li>
                   <input type="hidden" name="bot-field" />
                 </li>
                 <li>
-                  <input type="hidden" name="form-name" value="Contact Form" />
-                </li> */}
+                  <input type="hidden" name="form-name" value="contact" />
+                </li>
                 <ul className={contactStyles.container_row}>
                   <li>
                     <input
@@ -104,6 +109,7 @@ const ContactForm = () => {
                       id="btnControl"
                       className={contactStyles.btnControl}
                       ref={name}
+                      name="checkbox0"
                     />
                     <div className={contactStyles.btn}>
                       <span>
@@ -131,6 +137,7 @@ const ContactForm = () => {
                       id="btnControl"
                       className={contactStyles.btnControl}
                       ref={email}
+                      name="checkbox1"
                     />
 
                     <div
@@ -174,6 +181,7 @@ const ContactForm = () => {
                     id="btnControl"
                     className={contactStyles.btnControl}
                     ref={subject}
+                    name="checkbox2"
                   />
                   <div className={contactStyles.btn}>
                     <span>
@@ -201,6 +209,7 @@ const ContactForm = () => {
                     id="btnControl"
                     className={contactStyles.btnControl}
                     ref={message}
+                    name="checkbox3"
                   />
                   <div
                     className={`${contactStyles.btn} ${errors.message &&
@@ -213,7 +222,6 @@ const ContactForm = () => {
                             name="message"
                             id="message"
                             placeholder="Message"
-                            rows="5"
                             value={values.message}
                             onFocus={handleFocus}
                             onBlur={handleFocus}

@@ -5,15 +5,7 @@ module.exports = {
     author: `Michl`,
   },
   plugins: [
-    // {
-    //   resolve: "gatsby-plugin-react-svg",
-    //   options: {
-    //     rule: {
-    //       include: /assets/, // See below to configure properly
-    //     },
-    //   },
-    // },
-    // "gatsby-transformer-inline-svg",
+    "gatsby-plugin-offline",
     `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-nprogress`,
