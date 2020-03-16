@@ -49,7 +49,7 @@ const ContactForm = () => {
       errors.message = "Message is required"
     }
     if (values.message.length < 10 && values.message.length !== 0) {
-      errors.message = "Your message need minimum 10 characters"
+      errors.message = "Your message needs minimum 10 characters"
     }
     return errors
   }
@@ -58,6 +58,7 @@ const ContactForm = () => {
     e.preventDefault()
     setIsSubmitting(true)
     setErrors(validate(values))
+    console.log("e.currentTarget: ", e.currentTarget)
     e.currentTarget.reset()
   }
 
@@ -78,7 +79,8 @@ const ContactForm = () => {
           </p>
           <div className={contactStyles.form}>
             <form
-              name="contact"
+              name="Contact Form"
+              netlify
               method="post"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
@@ -91,7 +93,7 @@ const ContactForm = () => {
                   <input type="hidden" name="bot-field" />
                 </li>
                 <li>
-                  <input type="hidden" name="form-name" value="contact" />
+                  <input type="hidden" name="form-name" value="Contact Form" />
                 </li>
                 <ul className={contactStyles.container_row}>
                   <li>

@@ -103,7 +103,7 @@ a[data-nav-text] {
   }
 }
 
-a[data-nav-text='my work'] {
+a[data-nav-text2='my work'] {
   bottom: -2px;
 
   @media screen and (min-width: 1200px) {
@@ -111,7 +111,7 @@ a[data-nav-text='my work'] {
   }
 }
 
-a[data-nav-text='mess'] {
+a[data-nav-text2='mess'] {
   bottom: -2px;
 
   @media screen and (min-width: 1200px) {
