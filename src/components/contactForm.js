@@ -82,19 +82,21 @@ const ContactForm = () => {
               name="Contact Form"
               netlify
               method="post"
-              data-netlify="true"
+              // data-netlify="true"
+              netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
               noValidate
               autoComplete="off"
             >
+              <input type="hidden" name="form-name" value="Contact Form" />
               <ul className={contactStyles.box}>
-                <li>
+                {/* <li>
                   <input type="hidden" name="bot-field" />
                 </li>
                 <li>
                   <input type="hidden" name="form-name" value="Contact Form" />
-                </li>
+                </li> */}
                 <ul className={contactStyles.container_row}>
                   <li>
                     <input
