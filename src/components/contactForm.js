@@ -60,8 +60,11 @@ const ContactForm = () => {
     setIsSubmitting(true)
     setErrors(validate(values))
     // console.log("e.currentTarget: ", e.currentTarget)
-    e.currentTarget.reset()
-    form.current.reset()
+    if (Object.keys(errors).length === 0 && isSubmitting) {
+      e.currentTarget.reset()
+      form.current.reset()
+      setValues({ name: "", email: "", subject: "", message: "" })
+    }
     console.log("e.currentTarget: ", form.current)
   }
 
