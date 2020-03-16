@@ -72,7 +72,7 @@ const ContactForm = () => {
 
     // if (Object.keys(errors).length === 0 && isSubmitting) {
     // e.currentTarget.reset()
-    form.current.reset()
+    // form.current.reset()
     //   setValues({ name: "", email: "", subject: "", message: "" })
     // }
     // console.log("e.currentTarget: ", form.current)
@@ -101,18 +101,40 @@ const ContactForm = () => {
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
-              ref={form}
             >
-              <input type="hidden" name="form-name" value="contact" />
+              <input type="hidden" name="bot-field" />
               <div>
-                <label>Your Email:</label>
-                <input type="email" name="email" onChange={handleChange} />
+                <label htmlFor="name">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  onChange={handleChange}
+                />
               </div>
               <div>
-                <label>Message:</label>
-                <textarea name="message" />
+                <label htmlFor="email">Email</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  onChange={handleChange}
+                />
               </div>
-              <button type="submit">Send</button>
+              <div>
+                <label htmlFor="message">Message</label>
+                <textarea
+                  name="message"
+                  id="message"
+                  rows="6"
+                  required
+                  onChange={handleChange}
+                />
+              </div>
+              <div>
+                <input type="submit" value="Drop a line" />
+                <input type="reset" value="Eraser" />
+              </div>
             </form>
             {/* <form
               name="contact"
