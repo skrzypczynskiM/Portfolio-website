@@ -85,6 +85,43 @@ const ContactForm = () => {
           </p>
           <div className={contactStyles.form}>
             <form
+              method="post"
+              action="#"
+              data-netlify="true"
+              name="contact"
+              onSubmit={handleSubmit}
+            >
+              <input
+                type="hidden"
+                name="form-name"
+                value="contact"
+                onChange={handleChange}
+              />
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                onChange={handleChange}
+              />
+              <input
+                type="text"
+                name="email"
+                id="email"
+                required
+                onChange={handleChange}
+              />
+              <textarea
+                name="message"
+                id="message"
+                rows="4"
+                required
+                onChange={handleChange}
+              />
+              <input type="submit" value="Send Message" />
+            </form>
+
+            <form
               name="myfuckingcontact"
               action="POST"
               method="POST"
