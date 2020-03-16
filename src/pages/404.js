@@ -8,7 +8,7 @@ import Rocket from "../images/rocket.svg"
 import Earth from "../images/earth.svg"
 import Astronaut from "../images/astronaut.svg"
 import Moon from "../images/moon.svg"
-import Page404 from "../images/404.svg"
+import Page404 from "../images/page404.svg"
 
 import styles404 from "./404.module.scss"
 
