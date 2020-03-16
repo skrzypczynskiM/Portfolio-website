@@ -99,7 +99,6 @@ const ContactForm = () => {
             <form
               name="contact"
               method="post"
-              action="/success"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
@@ -134,10 +133,7 @@ const ContactForm = () => {
                   onChange={handleChange}
                 />
               </div>
-              <div>
-                <input type="submit" value="Drop a line" />
-                <input type="reset" value="Eraser" />
-              </div>
+              <button type="submit">Send</button>
             </form>
             {/* <form
               name="contact"
