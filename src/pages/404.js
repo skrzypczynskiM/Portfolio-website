@@ -6,7 +6,7 @@ import Layout from "../components/layout"
 
 import Rocket from "../images/rocket.svg"
 import Earth from "../images/earth.svg"
-import Astronaut from "../images/astronaut.svg"
+import Astronaut from "../images/atronaut.svg"
 import Moon from "../images/moon.svg"
 import Page404 from "../images/page404.svg"
 
