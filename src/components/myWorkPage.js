@@ -19,6 +19,26 @@ const MyWorkPage = () => {
         return  */}
           <Link
             // to={`/portfolio/${data.allFile.edges.node.fields.slug}`}
+            to={`/portfolio/Bodo`}
+            className={myWorkPageStyles.galleryLink}
+          >
+            <figure className={myWorkPageStyles.galleryImage}>
+              {/* <img
+              // src="https://unsplash.it/1200/1600?image=266"
+              src="face.jpg"
+              alt="blahhhhhhhhhhhhhhhhhhhhhhhhh"
+              width={500}
+              height={500}
+            /> */}
+              <div
+                className={`${myWorkPageStyles.img} ${myWorkPageStyles.bodo}`}
+              ></div>
+              <figcaption>Bodo</figcaption>
+            </figure>
+          </Link>
+
+          <Link
+            // to={`/portfolio/${data.allFile.edges.node.fields.slug}`}
             to={`/portfolio/Cantry`}
             className={myWorkPageStyles.galleryLink}
           >

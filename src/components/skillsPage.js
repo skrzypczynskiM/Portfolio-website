@@ -3,6 +3,18 @@ import skillsStyle from "./skills.module.scss"
 import RotatingBox from "./rotatingBox"
 
 const SkillsPage = () => {
+  const languages = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "Styled-Components",
+    "Sass",
+    "Less",
+    "Stylus",
+    "React",
+    "Redux",
+  ]
+
   return (
     <div className={skillsStyle.skillsPage}>
       <div className={skillsStyle.sectionOne}>
@@ -31,11 +43,17 @@ const SkillsPage = () => {
               life in the browser.
             </p>
             <h4>Languages I speak:</h4>
-            <p>HTML, CSS, JavaScript, Sass, Less, Stylus</p>
-            <h4>Dev tools:</h4>
+            {/* {languages.map(language => (
+              <p className={skillsStyle.language}>{language}</p>
+            ))} */}
             <p>
-              React, Redux, Jest, Enzyme, Bootstrap , Gatsby, GitHub, GraphQL,
-              GraphqlYoga, Firebase, Figma, Visual Studio Code, Atom
+              HTML, CSS, JavaScript, Styled-Components, Sass, Less, Stylus,
+              React, Redux
+            </p>
+            <h4>Other:</h4>
+            <p>
+              Jest, Enzyme, Bootstrap , Gatsby, GitHub, GraphQL, GraphqlYoga,
+              Firebase, Figma, Inkscape, Visual Studio Code, Atom
             </p>
           </div>
           {/* <div className={skillsStyle.asPerson}>
