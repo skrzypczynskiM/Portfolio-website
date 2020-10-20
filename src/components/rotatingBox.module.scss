@@ -127,7 +127,7 @@ $big-space: 100px;
   }
   & div:nth-child(5) {
     transform: rotateY(0deg) translateZ($mobile-space);
-    background-image: url("../images/vueIcon.svg");
+    background-image: url("../images/vue.svg");
 
     @media screen and (min-width: 720px) {
       transform: rotateY(0deg) translateZ($medium-space);
