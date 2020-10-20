@@ -1,15 +1,7 @@
-import React, { useState } from "react"
+import React from "react"
 import aboutStyles from "./about.module.scss"
 
 const AboutPage = () => {
-  const [isDesktop, setBorder] = useState(false)
-
-  const setBorderFunction = () => {
-    const windowWidth = window.innerWidth
-    if (windowWidth >= 720) setBorder(true)
-    else setBorder(false)
-  }
-
   return (
     <div className={aboutStyles.aboutPage}>
       <div className={aboutStyles.aboutMe}>
@@ -57,15 +49,6 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        {/* END OF JOURNEYYYYY */}
-        {/* <div className={aboutStyles.mePersonality}>
-          <h1>As a person</h1>
-          <p className={aboutStyles.theBeginnings}>
-            {" "}
-            Lorem Ipsolumn Lorem Ipsolumn Lorem Ipsolumn Lorem Ipsolumn Lorem
-            Ipsolumn Lorem Ipsolumn Lorem Ipsolumn Lorem Ipsolumn
-          </p>
-        </div> */}
       </div>
     </div>
   )

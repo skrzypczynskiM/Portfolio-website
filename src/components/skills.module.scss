@@ -31,7 +31,7 @@
     width: 50%;
   }
 
-  &>h3 {
+  & > h3 {
     color: #cb70f8;
     text-align: left;
     font-size: 5rem;
@@ -42,7 +42,7 @@
     }
   }
 
-  &>p {
+  & > p {
     font-size: 1.6rem;
     padding: 15px;
     color: #bdbdbd;
@@ -120,16 +120,7 @@
     color: #bdbdbd;
     padding: 0 15px;
     line-height: 2.3rem;
-
-    // padding: 4px 8px;
-    // background: rgba(207, 58, 236, 0.945);
     margin: 0 10px;
-
-
-    // -webkit-box-shadow: 0px 0px 19px 0px rgba(224, 56, 224, 1);
-    // -moz-box-shadow: 0px 0px 19px 0px rgba(224, 56, 224, 1);
-    // box-shadow: 0px 0px 19px 0px rgba(224, 56, 224, 1);
-
     &.language {
       background: rgba(207, 58, 236, 0.945);
     }

@@ -30,7 +30,6 @@
 
     @media screen and (min-width: 1200px) {
       padding: 2px 6px;
-      // width: auto;
     }
 
     @media screen and (min-width: 1550px) {
@@ -72,38 +71,38 @@ a[data-nav-text] {
     height: 70px;
   }
 
-  &.activeNavItem>.homeIcon {
+  &.activeNavItem > .homeIcon {
     background-image: url("../images/homee.svg");
     background-color: #212121;
     z-index: 999;
   }
 
-  &.activeNavItem>.aboutIcon {
+  &.activeNavItem > .aboutIcon {
     background-image: url("../images/user_2.svg");
     background-color: #212121;
     z-index: 999;
   }
 
-  &.activeNavItem>.skillsIcon {
+  &.activeNavItem > .skillsIcon {
     background-image: url("../images/skills22.svg");
     background-color: #212121;
     z-index: 999;
   }
 
-  &.activeNavItem>.myWorkIcon {
+  &.activeNavItem > .myWorkIcon {
     background-image: url("../images/my-work_2.svg");
     background-color: #212121;
     z-index: 999;
   }
 
-  &.activeNavItem>.contactIcon {
+  &.activeNavItem > .contactIcon {
     background-image: url("../images/contact_2.svg");
     background-color: #212121;
     z-index: 999;
   }
 }
 
-a[data-nav-text2='my work'] {
+a[data-nav-text2="my work"] {
   bottom: -2px;
 
   @media screen and (min-width: 1200px) {
@@ -111,15 +110,13 @@ a[data-nav-text2='my work'] {
   }
 }
 
-a[data-nav-text2='mess'] {
+a[data-nav-text2="mess"] {
   bottom: -2px;
 
   @media screen and (min-width: 1200px) {
     bottom: unset;
   }
 }
-
-
 
 .icon {
   position: relative;
@@ -131,9 +128,7 @@ a[data-nav-text2='mess'] {
   height: 100%;
   width: 100%;
   background-position: center;
-  /* Center the image */
   background-repeat: no-repeat;
-  /* Do not repeat the image */
   background-size: cover;
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
@@ -219,7 +214,6 @@ a[data-nav-text]:after {
   font-size: 0.8rem;
   font-weight: 500;
   background-color: #212121;
-  /* Used if the image is unavailable */
   width: 100%;
   height: 100%;
   letter-spacing: 2px;
@@ -270,11 +264,10 @@ a[data-nav-text]:hover::after {
   color: #999999;
   text-decoration: none;
   margin: 0;
-  // padding: 8px;
   font-size: 1rem;
 }
 
-nav>li:first-child {
+nav > li:first-child {
   margin-right: auto;
   left: 0;
 
@@ -289,7 +282,7 @@ nav>li:first-child {
   }
 }
 
-nav>.firstSocial {
+nav > .firstSocial {
   margin-left: auto;
 
   @media screen and (min-width: 1200px) {
@@ -300,17 +293,12 @@ nav>.firstSocial {
 .michlIcon {
   display: inline-block;
   background-color: transparent;
-  // background-image: url("../images/logo_mobile.svg");
   background-image: url("../images/github_color.svg");
   background-image: url("../images/linkedIn_gray.svg");
   background-image: url("../images/hawks.png");
   background-size: contain;
-  // overflow: visible;
-
   background-position: center;
-  /* Center the image */
   background-repeat: no-repeat;
-  /* Do not repeat the image */
   width: 40px;
   height: 35px;
   z-index: 999;
@@ -320,14 +308,12 @@ nav>.firstSocial {
     height: 55px;
     position: relative;
     left: -5px;
-    // background-image: url("../images/THIS_LOGO2.svg");
     background-image: url("../images/hawks.png");
   }
 
   @media screen and (min-width: 1550px) {
     width: 60px;
     height: 60px;
-    // background-image: url("../images/THIS_LOGO3.svg");
     background-image: url("../images/hawks.png");
   }
 }

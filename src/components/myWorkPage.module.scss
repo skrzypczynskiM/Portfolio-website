@@ -352,7 +352,7 @@ html:not(.touch) .gallery-image {
     }
 
     &.companyTable {
-      background-image: url("./projects/companyTable/main-ver2.png");
+      background-image: url("./projects/CompanyTable/main-ver2.png");
     }
 
     &.portfolio {
@@ -601,13 +601,3 @@ figure {
   height: 100%;
   box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 }
-
-// .gallery {
-//   display: flex;
-//   flex-wrap: wrap;
-//   width: 100%;
-// }
-
-// .gallery > * {
-//   flex: 0 1 300px;
-// }

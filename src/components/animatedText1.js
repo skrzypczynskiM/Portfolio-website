@@ -1,16 +1,9 @@
-import React, { useState } from "react"
+import React from "react"
 import Typist from "react-typist"
 import "./Typist.scss"
 import homeStyle from "./homePage.module.scss"
 
-const Text1 = ({ isTyped1, isTyped2, showCursor, showWhoIAm }) => {
-  // const [isTyped, toggleTyped] = useState(false)
-
-  //   const toggleTyped2 = () => {
-  //     console.log(isTyped)
-  //     toggleTyped(!isTyped)
-  //     console.log(isTyped)
-  //   }
+const Text1 = ({ isTyped1, showCursor, showWhoIAm }) => {
   return (
     <>
       <Typist
@@ -22,7 +15,6 @@ const Text1 = ({ isTyped1, isTyped2, showCursor, showWhoIAm }) => {
         <span className={homeStyle.welcomeText}>
           Looking for a Front End Developer?
           <Typist.Delay ms={800} />
-          {/* <Typist.Backspace count={34} delay={200} /> */}
         </span>
       </Typist>
 

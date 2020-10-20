@@ -1,20 +1,8 @@
-import React, { useState } from "react"
+import React from "react"
 import skillsStyle from "./skills.module.scss"
 import RotatingBox from "./rotatingBox"
 
 const SkillsPage = () => {
-  const languages = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "Styled-Components",
-    "Sass",
-    "Less",
-    "Stylus",
-    "React",
-    "Redux",
-  ]
-
   return (
     <div className={skillsStyle.skillsPage}>
       <div className={skillsStyle.sectionOne}>
@@ -43,22 +31,17 @@ const SkillsPage = () => {
               life in the browser.
             </p>
             <h4>Languages I speak:</h4>
-            {/* {languages.map(language => (
-              <p className={skillsStyle.language}>{language}</p>
-            ))} */}
             <p>
-              HTML, CSS, JavaScript, Styled-Components, Sass, Less, Stylus,
-              React, Redux
+              React, Vue, Redux, Vuex, JavaScript, Typescript,
+              Styled-Components, Scss, HTML, CSS
             </p>
             <h4>Other:</h4>
             <p>
-              Jest, Enzyme, Bootstrap , Gatsby, GitHub, GraphQL, GraphqlYoga,
-              Firebase, Figma, Inkscape, Visual Studio Code, Atom
+              Gatsby, GitHub, Firebase, Java, Python, Jest, Enzyme, Bootstrap,
+              GraphQL, Figma, Inkscape, Visual Studio Code, Atom
             </p>
           </div>
-          {/* <div className={skillsStyle.asPerson}>
-            <div className={skillsStyle.personImg}></div>
-          </div> */}
+
           <div className={skillsStyle.vl}></div>
         </div>
       </div>

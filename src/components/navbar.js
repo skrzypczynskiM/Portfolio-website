@@ -1,6 +1,5 @@
 import React from "react"
 import { Link } from "gatsby"
-
 import navbarStyles from "./navbar.module.scss"
 
 const NavBar = () => {
@@ -62,7 +61,6 @@ const NavBar = () => {
           <i className={`${navbarStyles.icon} ${navbarStyles.contactIcon}`}></i>
         </Link>
       </li>
-      {/* <div className={navbarStyles.socialIcons}> */}
       <li className={`${navbarStyles.firstSocial} ${navbarStyles.showDesktop}`}>
         <a
           className={navbarStyles.navItem}

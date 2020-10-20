@@ -1,8 +1,5 @@
 import React, { useState } from "react"
 import homeStyle from "./homePage.module.scss"
-import Typist from "react-typist"
-import "./Typist.scss"
-
 import AnimatedText1 from "./animatedText1"
 import WhoIAm from "./animatedText2"
 
@@ -22,8 +19,6 @@ const HomePage = () => {
     <div className={homeStyle.homePage}>
       <div className={homeStyle.center}>
         <div className={homeStyle.isTyping}>
-          {/* {!this.state.isHidden && <Child />} */}
-
           <div className={homeStyle.container}>
             <AnimatedText1
               isTyped1={isTyped1}

@@ -23,7 +23,6 @@ const ContactForm = () => {
 
   const handleFocus = e => {
     const inputRef = e.currentTarget.name
-    //if input is invalid make
     if (!errors[inputRef]) {
       refs[inputRef].current.checked = !refs[inputRef].current.checked
     }
@@ -59,7 +58,6 @@ const ContactForm = () => {
     e.preventDefault()
     setIsSubmitting(true)
     setErrors(validate(values))
-    // console.log("e.currentTarget: ", e.currentTarget)
     if (Object.keys(errors).length === 0 && isSubmitting) {
       e.currentTarget.reset()
       form.current.reset()
@@ -90,11 +88,8 @@ const ContactForm = () => {
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
-              // noValidate
-              // autoComplete="off"
               ref={form}
             >
-              {/* <input type="hidden" name="form-name" value="Contact Form" /> */}
               <ul className={contactStyles.box}>
                 <li>
                   <input type="hidden" name="bot-field" />
