@@ -11,7 +11,6 @@ const Box = () => {
         <div></div>
         <div></div>
         <div></div>
-        />
       </div>
     </div>
   )

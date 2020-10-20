@@ -17,19 +17,21 @@ const MyWorkPage = () => {
         <article className={myWorkPageStyles.gallery}>
           {/* {data.allFile.edges.map((edge) => {
         return  */}
+
           <Link
-            // to={`/portfolio/${data.allFile.edges.node.fields.slug}`}
-            to={`/portfolio/Bodo`}
+            to={`/portfolio/Banitz`}
             className={myWorkPageStyles.galleryLink}
           >
             <figure className={myWorkPageStyles.galleryImage}>
-              {/* <img
-              // src="https://unsplash.it/1200/1600?image=266"
-              src="face.jpg"
-              alt="blahhhhhhhhhhhhhhhhhhhhhhhhh"
-              width={500}
-              height={500}
-            /> */}
+              <div
+                className={`${myWorkPageStyles.img} ${myWorkPageStyles.banitz}`}
+              ></div>
+              <figcaption>Banitz</figcaption>
+            </figure>
+          </Link>
+
+          <Link to={`/portfolio/Bodo`} className={myWorkPageStyles.galleryLink}>
+            <figure className={myWorkPageStyles.galleryImage}>
               <div
                 className={`${myWorkPageStyles.img} ${myWorkPageStyles.bodo}`}
               ></div>
@@ -115,7 +117,7 @@ const MyWorkPage = () => {
             </figure>
           </Link>
 
-          <Link
+          {/* <Link
             className={myWorkPageStyles.galleryLink}
             to={`/portfolio/placeholderForMyAwesomeProject`}
           >
@@ -127,7 +129,7 @@ const MyWorkPage = () => {
               />
               <figcaption>Placeholder</figcaption>
             </figure>
-          </Link>
+          </Link> */}
         </article>
       </div>
     </div>

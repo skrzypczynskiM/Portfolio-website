@@ -28,7 +28,6 @@ export const query = graphql`
         img5 {
           base
         }
-
         link
       }
       html
