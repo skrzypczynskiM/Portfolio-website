@@ -40,7 +40,7 @@ $big-space: 100px;
     background-color: rgb(136, 136, 136);
     background-color: rgb(133, 133, 133);
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 
     @media screen and (min-width: 720px) {
       width: $medium-cube-size;
