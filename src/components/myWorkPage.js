@@ -30,6 +30,18 @@ const MyWorkPage = () => {
             </figure>
           </Link>
 
+          <Link
+            to={`/portfolio/3-room`}
+            className={myWorkPageStyles.galleryLink}
+          >
+            <figure className={myWorkPageStyles.galleryImage}>
+              <div
+                className={`${myWorkPageStyles.img} ${myWorkPageStyles.room3}`}
+              ></div>
+              <figcaption>Banitz</figcaption>
+            </figure>
+          </Link>
+
           <Link to={`/portfolio/Bodo`} className={myWorkPageStyles.galleryLink}>
             <figure className={myWorkPageStyles.galleryImage}>
               <div
@@ -117,7 +129,7 @@ const MyWorkPage = () => {
             </figure>
           </Link>
 
-          {/* <Link
+          <Link
             className={myWorkPageStyles.galleryLink}
             to={`/portfolio/placeholderForMyAwesomeProject`}
           >
@@ -129,7 +141,7 @@ const MyWorkPage = () => {
               />
               <figcaption>Placeholder</figcaption>
             </figure>
-          </Link> */}
+          </Link>
         </article>
       </div>
     </div>

@@ -336,7 +336,11 @@ html:not(.touch) .gallery-image {
     background-repeat: no-repeat;
 
     &.banitz {
-      background-image: url("./projects/Banitz/main.png");
+      background-image: url("./projects/Banitz/main2.png");
+    }
+
+    &.room3 {
+      background-image: url("./projects/3-room/main.png");
     }
 
     &.bodo {

@@ -42,7 +42,7 @@ const SkillsPage = () => {
               I like to code things from scratch, and enjoy bringing ideas to
               life in the browser.
             </p>
-            <h4>Languages I speakkk:</h4>
+            <h4>Languages I speak:</h4>
             {/* {languages.map(language => (
               <p className={skillsStyle.language}>{language}</p>
             ))} */}
