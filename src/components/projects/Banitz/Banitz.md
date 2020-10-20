@@ -1,7 +1,7 @@
 ---
 title: "Banitz"
 description: "E-Commerce shop with exlusive watches"
-img1: "main.png"
+img1: "main-new.png"
 img2: "gallery.png"
 img3: "watch-details.png"
 img4: "cart.png"
