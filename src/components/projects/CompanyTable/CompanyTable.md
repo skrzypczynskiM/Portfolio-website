@@ -1,7 +1,7 @@
 ---
 title: "CompanyTable"
 description: "Table filtering app made for recruitment purpose"
-img1: "main.png"
+img1: "main-ver2.png"
 img2: "waiting.png"
 img3: "sorting.png"
 img4: "filtering.png"
