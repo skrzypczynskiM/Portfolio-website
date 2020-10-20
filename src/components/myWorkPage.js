@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import myWorkPageStyles from "./myWorkPage.module.scss"
 
 const MyWorkPage = () => {
@@ -15,9 +15,6 @@ const MyWorkPage = () => {
       </div>
       <div className={myWorkPageStyles.galleryContainer}>
         <article className={myWorkPageStyles.gallery}>
-          {/* {data.allFile.edges.map((edge) => {
-        return  */}
-
           <Link
             to={`/portfolio/Banitz`}
             className={myWorkPageStyles.galleryLink}
@@ -25,18 +22,6 @@ const MyWorkPage = () => {
             <figure className={myWorkPageStyles.galleryImage}>
               <div
                 className={`${myWorkPageStyles.img} ${myWorkPageStyles.banitz}`}
-              ></div>
-              <figcaption>Banitz</figcaption>
-            </figure>
-          </Link>
-
-          <Link
-            to={`/portfolio/3-room`}
-            className={myWorkPageStyles.galleryLink}
-          >
-            <figure className={myWorkPageStyles.galleryImage}>
-              <div
-                className={`${myWorkPageStyles.img} ${myWorkPageStyles.room3}`}
               ></div>
               <figcaption>Banitz</figcaption>
             </figure>
@@ -52,18 +37,10 @@ const MyWorkPage = () => {
           </Link>
 
           <Link
-            // to={`/portfolio/${data.allFile.edges.node.fields.slug}`}
             to={`/portfolio/Cantry`}
             className={myWorkPageStyles.galleryLink}
           >
             <figure className={myWorkPageStyles.galleryImage}>
-              {/* <img
-              // src="https://unsplash.it/1200/1600?image=266"
-              src="face.jpg"
-              alt="blahhhhhhhhhhhhhhhhhhhhhhhhh"
-              width={500}
-              height={500}
-            /> */}
               <div
                 className={`${myWorkPageStyles.img} ${myWorkPageStyles.cantry}`}
               ></div>
@@ -72,18 +49,22 @@ const MyWorkPage = () => {
           </Link>
 
           <Link
-            // to={`/portfolio/${data.allFile.edges.node.fields.slug}`}
+            to={`/portfolio/3-room`}
+            className={myWorkPageStyles.galleryLink}
+          >
+            <figure className={myWorkPageStyles.galleryImage}>
+              <div
+                className={`${myWorkPageStyles.img} ${myWorkPageStyles.room3}`}
+              ></div>
+              <figcaption>3-room</figcaption>
+            </figure>
+          </Link>
+
+          <Link
             to={`/portfolio/Portfolio`}
             className={myWorkPageStyles.galleryLink}
           >
             <figure className={myWorkPageStyles.galleryImage}>
-              {/* <img
-              // src="https://unsplash.it/1200/1600?image=266"
-              src="face.jpg"
-              alt="blahhhhhhhhhhhhhhhhhhhhhhhhh"
-              width={500}
-              height={500}
-            /> */}
               <div
                 className={`${myWorkPageStyles.img} ${myWorkPageStyles.portfolio}`}
               ></div>
@@ -92,7 +73,18 @@ const MyWorkPage = () => {
           </Link>
 
           <Link
-            // to={`/portfolio/${data.allFile.edges.node.fields.slug}`}
+            to={`/portfolio/CompanyTable`}
+            className={myWorkPageStyles.galleryLink}
+          >
+            <figure className={myWorkPageStyles.galleryImage}>
+              <div
+                className={`${myWorkPageStyles.img} ${myWorkPageStyles.companyTable}`}
+              ></div>
+              <figcaption>CompanyTable</figcaption>
+            </figure>
+          </Link>
+
+          <Link
             to={`/portfolio/Expensify`}
             className={myWorkPageStyles.galleryLink}
           >
@@ -103,21 +95,7 @@ const MyWorkPage = () => {
               <figcaption>Expensify</figcaption>
             </figure>
           </Link>
-          {/* <a
-          className={myWorkPageStyles.galleryLink}
-          href='https://unsplash.it/1200/1000?image=1014'
-        >
-          <figure className={myWorkPageStyles.galleryImage}>
-            <img
-              src='https://unsplash.it/1200/1000?image=1014'
-              // width={1200}
-              // height={1000}
-            />
-            <figcaption>View Project</figcaption>
-          </figure>
-        </a> */}
           <Link
-            // to={`/portfolio/${data.allFile.edges.node.fields.slug}`}
             to={`/portfolio/CatchOfTheDay`}
             className={myWorkPageStyles.galleryLink}
           >
